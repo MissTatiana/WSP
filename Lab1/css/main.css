@@ -15,9 +15,6 @@ body{
 		line-height:1
 	}
 
-ol,ul{
-		list-style:none
-	}
 
 blockquote,q{
 		quotes:none
@@ -37,22 +34,37 @@ body{
 div#wrapper{
 	background: rgba(155, 154, 178, .6);
 	width: 960px;
+	height: 800px;
 	margin: 0 auto;
 	border-radius: 20px;
+	padding-top: 10px;
 }
 
 h1{
-	font-size: 3.000em;
+	font: 3.000em 'Niconne', cursive;
+	background-color: #5d5c73;
+	width: 250px;
+	border-radius: 0px 10px 10px 0px;
+	padding: 0px 10px 0px 10px;
+	margin: 10px 0px 10px -5px;
 }
 
 h2{
-	font-size: 2.500em;
+	font: 2.500em 'Niconne', cursive;
+	margin: 5px 0px 5px 25px;
 }
 
 h3{
-	font-size: 2.000em;
+	font: 2.000em 'Niconne', cursive;
+	margin: 5px 0px 5px 25px;
 }
 
-p{
-	font-size: 1.300em;
+p, li{
+	font-size: 1.400em;
+	margin: 5px 0px 0px 35px;
+	width: 800px;
+}
+
+ul{
+	margin-left: 20px;
 }

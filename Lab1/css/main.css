@@ -60,7 +60,7 @@ h3{
 }
 
 p, li{
-	font-size: 1.400em;
+	font: 1.400em Helvetica, Arial, Serif;
 	margin: 5px 0px 0px 35px;
 	width: 800px;
 }

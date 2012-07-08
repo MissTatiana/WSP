@@ -13,6 +13,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 
 body{
 		line-height:1
+		margin: 0 auto;
 	}
 
 
@@ -24,16 +25,27 @@ blockquote:before,blockquote:after,q:before,q:after{
 		content:none}table{border-collapse:collapse;border-spacing:0
 	}
 
-/*	=	=	=	body	=	=	=	*/
+/*	=	=	=	=	=	=	body	=	=	=	=	=	=	*/
 
-ul{
+header{
+	padding-bottom: 50px;
+}
+
+h3{
+	font-size: 20px;
+	font-weight: bold
+}
+
+/*	=	=	Navigation	=	=	*/
+
+ nav ul{
 	background: #aeaeae;
 	width: 800px;
 	height: 50px;
 	margin: 0 auto;
 }
 
-ul li{
+ nav ul li{
 	display: inline;
 	float: left;
 	margin: 10px 20px 10px 20px;
@@ -42,7 +54,7 @@ ul li{
 	vertical-align: center;
 }
 
-ul li a{
+ nav ul li a{
 	text-decoration: none;
 }
 
@@ -51,7 +63,80 @@ ul li a{
 	font-weight: bold;
 }
 
+
 .image{
 	margin: 0px 10px 0px 60px;
 	padding: 0;
 }
+
+div#wrapper{
+	margin: 0 auto;
+}
+
+div#job{
+	width: 300px;
+	background: green;
+	padding: 5px;
+	float: left;
+	margin: 20px;
+}
+/*	=	= Forms	=	=	*/
+
+form#newsletter{
+	margin-top: 20px;
+	width: 300px;
+	padding: 5px;
+	background: blue;
+	float: left;
+	margin: 20px;
+}
+
+form#message{
+	background: red;
+	width: 600px;
+	padding: 5px;
+}
+
+form#book{
+	background: purple;
+	width: 600px;
+	padding: 5px;
+}
+
+
+
+/*	=	=	=	Button	=	=	=	*/
+
+
+.button {
+   border-top: 1px solid #b87a53;
+   background: #94592c;
+   background: -webkit-gradient(linear, left top, left bottom, from(#b87a53), to(#94592c));
+   background: -webkit-linear-gradient(top, #b87a53, #94592c);
+   background: -moz-linear-gradient(top, #b87a53, #94592c);
+   background: -ms-linear-gradient(top, #b87a53, #94592c);
+   background: -o-linear-gradient(top, #b87a53, #94592c);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #c4c4c4;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #783a28;
+   background: #783a28;
+   color: #fafafa;
+   }
+.button:active {
+   border-top-color: #e87731;
+   background: #e87731;
+   }
+

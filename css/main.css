@@ -140,3 +140,39 @@ form#book{
    background: #e87731;
    }
 
+/*	=	=	=	=	=	Calander	=	=	=	=	=	*/
+
+#aside{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+
+#seat ul li{
+	list-style: none;
+}
+
+#main{
+	float: left;
+}
+
+table{
+	margin-left: 20px;
+	border-width: 2px;
+	border-style: solid;
+}
+
+table#august{
+	margin-top: 30px;
+}
+
+th, td{
+	width: 80px;
+	border-width: 2px;
+	border-style: solid;
+	padding: 5px 10px 5px 10px;
+}
+
+.dates{
+	height: 100px;
+}

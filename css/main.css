@@ -60,6 +60,12 @@ header{
 	padding-bottom: 50px;
 }
 
+p{
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 14px;
+	color: #989898;
+}
+
 h1{
 	font-size: 25px;
 	font-family: 'CopystructNormal';
@@ -68,7 +74,14 @@ h1{
 
 h3{
 	font-size: 20px;
-	font-weight: bold
+	font-family: 'CopystructNormal';
+	color: #59181e;
+}
+
+h4{
+	font-size: 17px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	color: #ffffff;
 }
 
 /*	=	=	Navigation	=	=	*/
@@ -138,7 +151,7 @@ a:hover{
 /*	=	=	=	=	=	=	Home	=	=	=	=	=	*/
 
 div#head{
-	margin: -10px 0px 0px 121px;
+	margin: -10px 0px 0px 113px;
 	max-width: 960px;
 	height: 290px;
 }
@@ -156,6 +169,110 @@ div#posters{
 	margin-left: 450px;
 }
 
+#posters ul{
+	margin-left: 120px;
+}
+
+#posters ul li{
+	display: inline;
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+
+/*	=	=	Secondary content =	=	*/
+
+div#secondary{
+	margin-left: 110px;
+}
+
+div#directions{
+	width: 280px;
+	height: 400px;
+	margin: 10px 20px;
+	overflow: hidden;
+	clear: left;
+	float: left;
+	background: rgba(65, 49, 39, .7);
+}
+
+#directions h3{
+	margin: 5px 0px 5px 55px;
+}
+
+#directions img{
+	margin: 5px 10px;
+}
+
+#directions h4{
+	margin: 10px;
+	font-family: 'CopystructNormal';
+	color: #59181e;
+}
+
+#directions ul{
+	margin: 5px 5px 5px 20px;
+}
+
+#directions ul li{
+	color: #ffffff;
+	margin: 5px;
+}
+
+#directions ul li a{
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 14px;
+	color: #ffffff; 
+	text-decoration: none;
+	border-bottom: 2px solid #ffffff;
+
+}
+
+div#blog{
+	width: 280px;
+	height: 400px;
+	margin: 10px 20px;
+	overflow: hidden;
+	float: left;
+	background: rgba(65, 49, 39, .7);
+}
+
+#blog h3{
+	margin: 5px 0px 5px 110px;
+}
+
+#blog a{
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 2px solid #ffffff;
+	float: right;
+	margin: 5px 10px 5px 0px;
+}
+
+#blog h4{
+	clear: right;
+	margin: 10px 5px 10px 5px;
+}
+
+#blog p{
+	margin: 5px;
+}
+
+div#gallery{
+	width: 280px;
+	height: 400px;
+	margin: 10px 20px;
+	overflow: hidden;
+	float: left;
+	background: rgba(65, 49, 39, .7);
+}
+
+#gallery h3{
+	margin: 5px 0px 5px 55px;
+}
+
+#gallery img{
+	margin: 5px 10px;
+}
 
 /*	=	= Forms	=	=	*/
 

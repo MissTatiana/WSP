@@ -25,7 +25,7 @@ blockquote:before,blockquote:after,q:before,q:after{
 		content:none}table{border-collapse:collapse;border-spacing:0
 	}
 
-/*	=	=	=	=	=	=	body	=	=	=	=	=	=	*/
+/*	=	=	=	=	=	=	fonts	=	=	=	=	=	=	*/
 
 @font-face {
     font-family: 'CopystructBold';
@@ -48,8 +48,9 @@ blockquote:before,blockquote:after,q:before,q:after{
          url('../fonts/copyn___-webfont.svg#CopystructNormal') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
+/*	=	=	=	=	body =		=	=	=	=	*/
 
 body{
 	background: url(../images/background.jpg);
@@ -84,6 +85,89 @@ h4{
 	color: #ffffff;
 }
 
+/*	=	=	=	footer	=	=	=	*/
+
+/*	=	=	footer nav	=	=	*/
+div#footer{
+	background: rgba(155, 116, 117, .7);
+	clear: left;
+	margin: 0 auto;
+	height: 240px;
+}
+
+#footer ul{
+	background: rgba(65, 49, 39, .7);
+}
+
+#footer ul li{
+	display: inline;
+	width: 70px;
+	height: 40px;
+	border-left: 3px solid #59181e;
+}
+
+#footer ul li:first-child{
+	border: none;
+	margin-left: 300px;
+}
+
+#footer ul li a{
+	height: 40px;
+	margin: 5px 10px;
+	padding: 0px 5px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+/*	=	=	Rest of footer	=	=	*/
+#footer img{
+	margin-top: 20px;
+	margin-left: 300px;
+	float: left;
+}
+
+div#doors{
+	float: left;
+	width: 250px;
+	margin: 20px 10px;
+}
+
+div#doors p{
+	color: #59181e;
+}
+
+div#hours{
+	float: left;
+	width: 250px;
+	margin: 20px 10px;
+}
+
+div#hours p{
+	color: #59181e;
+}
+
+div#copyright{
+	clear: left;
+	width: 500px;
+	margin-left: 475px;
+	margin-top: -50px;
+}
+
+div#copyright p{
+	color: #59181e;
+}
+
+div#social{
+	clear: left;
+	margin-left: 300px;
+}
+
+div#social img{
+	margin-top: 0;
+	margin-left: 0;
+	padding: 0px 5px;
+}
 /*	=	=	Navigation	=	=	*/
 
 nav{

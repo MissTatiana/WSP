@@ -23,11 +23,13 @@
 
 	<div id="wrapper">
 
+		<h1>Contact Us</h1>
 		<form id="newsletter">
 			<h3>Sign up for our newsletter</h3>
 			<ul>
 				<li>Be the first to know lastest events</li>
 				<li>Get awesome event deals and prizes</li>
+				<li>Great prizes for our memebers</li>
 			</ul>
 			<fieldset>
 				<div>
@@ -44,6 +46,12 @@
 					<label for="password">Create a password</label>
 					<input type="password" id="password" name="password" />
 				</div>
+
+				<div id="check">
+					<input type="checkbox" name="terms" value="agree" />Agree to terms and services
+				</div>
+
+				<button><a href="#">Join!</a></button>
 			</fieldset>
 		</form> <!-- newsletter -->
 
@@ -108,8 +116,14 @@
 					<label for="themessage">Your message:</label>
 					<textarea col="30" row="6"></textarea>
 				</div>
+
+				<button>Send</button>
 			</fieldset>
-		</form>
+
+			<div id="excuse">
+				<p>We get a lot of email throughout the day but we try our best to get back to all of our customers in 1-2 business days. Thank you for your patiences</p>
+			</div>
+		</form><!-- message -->
 
 		<form id="book">
 			<fieldset>
@@ -120,30 +134,34 @@
 				<div>
 
 				<div>
-					<fieldset id="band">
+					
 						<label for="bandphone">Phone number:</label>
 						<input type="phone" id="bandphone" name="bandphone" placeholder="(000)000-0000"/>
 
 						<label for="bandemail">Email address:</label>
 						<input type="email" id="bandemail" name="bandemail" placeholder="example@email.com"/>
-					</fieldset><!-- band -->
+					
 				</div>
+			</fieldset>
 
+			<fieldset>
 				<div>
 					<label for="agent">Agent:</label>
 					<input type="text" id="agent" name="agent" />
 				</div>
 
 				<div>
-					<fieldset id="agent">
+				
 						<label for="agentphone"> Phone number:</label>
 						<input type="phone" id="agentphone" name="agentphone" placeholder="(000)000-0000" />
 
 						<label for="agentemail">Email address:</label>
 						<input type="email" id="agentemail" name="adgentemail" placeholder="example@email.com" />
-					</fieldset><!-- agent -->
+					
 				</div>
+			</fieldset><!-- agent -->
 
+			<fieldset>
 				<div>
 					<label for="gener">Geners that best describe</label>
 					<textarea id="gener" name="gener"></textarea>
@@ -227,6 +245,8 @@
 					<label for="comment">Addition Comments</label>
 					<textarea id="comment" name="comment"></textarea>
 				</div>
+
+				<button>Book your show</button>
 			</fieldset>
 		</form><!-- book -->
 	</div><!-- wrapper -->

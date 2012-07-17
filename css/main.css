@@ -358,7 +358,7 @@ div#gallery{
 	margin: 5px 10px;
 }
 
-/*	=	= Forms	=	=	*/
+/*	=	= 	=	=	=	=	Forms	=	=	=	=	=	=	*/
 
 div#wrapper{
 	margin: 0 auto;
@@ -432,37 +432,129 @@ form#book{
 
 /*	=	=	=	=	=	Calander	=	=	=	=	=	*/
 
+/*	=	=	=	Sidebar	=	=	=	*/
+
 #aside{
-	width: 300px;
+	background: rgba(155, 116, 117, .7);
+	width: 275px;
 	float: left;
-	margin-left: 20px;
+	margin-left: 30px;
+	margin-top: 40px;
 }
 
-#seat ul li{
-	list-style: none;
+#aside h3{
+	margin: 5px 0px 5px 55px;
 }
 
-#main{
+#aside ul li{
+	list-style-type: none;
+	margin: 5px 0px 5px 25px;
+}
+
+/*	=	=	=	main =	=	=	*/
+
+div#main{
+	margin-left: 400px;
+}
+
+#main h1{
+	margin-left: 100px;
+}
+
+/*	=	=	= Months	=	=	=	*/
+
+.month{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 600px;
+}
+
+.monthof{
+	background: #59181e;
+	width: 590px;
+	padding: 5px 0px 5px 10px;
+	font-size: 20px;
+	font-family: 'CopystructNormal';
+	color: #fff;
+
+}
+
+.bandodd{
+	background: rgba(65, 49, 39, .7);
+	width: 200px;
+	height: 51px;
+	padding-bottom: 5px;
 	float: left;
 }
 
-table{
-	margin-left: 20px;
-	border-width: 2px;
-	border-style: solid;
+.bandodd p{
+	color: #fff;
+	padding: 5px;
 }
 
-table#august{
-	margin-top: 30px;
+.priceodd{
+	background: rgba(65, 49, 39, .7);
+	width: 200px;
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;	
 }
 
-th, td{
-	width: 80px;
-	border-width: 2px;
-	border-style: solid;
-	padding: 5px 10px 5px 10px;
+.priceodd p{
+	color: #fff;
+	padding: 3px;
 }
 
-.dates{
-	height: 100px;
+.timeodd{
+	background: rgba(65, 49, 39, .7);
+	width: 200px;
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
 }
+
+.timeodd p{
+	color: #fff;
+	padding: 3px;
+}
+
+.bandeven{
+	background: rgba(65, 49, 39, .9);
+	width: 200px;
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.bandeven p{
+	color: #fff;
+	padding: 3px;
+}
+
+.priceeven{
+	background: rgba(65, 49, 39, .9);
+	width: 200px;
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.priceeven p{
+	color: #fff;
+	padding: 3px;
+}
+
+.timeeven{
+	background: rgba(65, 49, 39, .9);
+	width: 200px;
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.timeeven p{
+	color: #fff;
+	padding: 3px;
+}
+
+

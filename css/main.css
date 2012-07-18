@@ -75,7 +75,7 @@ h1{
 }
 
 h2{
-	font-size: 2.200em;/*22px*/
+	font-size: 1.100em;/*22px*/
 	font-family: 'CopystructNormal';
 	color: #59181e;
 }
@@ -124,7 +124,7 @@ div#footer{
 	margin: .520833333333% 1.041666666667%;/*5px 10px*/
 	padding: 0% .520833333333%;/*0px 5px*/
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 2.000em;/*20px*/
+	font-size: 1.500em;/*20px*/
 	text-decoration: none;
 }
 
@@ -311,11 +311,15 @@ div#directions{
 
 #directions ul li a{
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 1.400em;/*14px*/
-	color: #ffffff; 
+	font-size: 1.000em;
+	color: #fff; 
 	text-decoration: none;
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 1px solid #fff;
+}
 
+#directions ul li a:hover{
+	color: #000;
+	border-bottom: 1px solid #000;
 }
 
 div#blog{
@@ -400,8 +404,9 @@ button {
    border: none;
    }
 
-button#send{
+button.big{
 	margin-left: 165px;
+	margin-top: 10px
 }
 
 button a{
@@ -431,7 +436,7 @@ form#newsletter{
 	margin-top: 20px;
 	width: 375px;
 	height: 370px;
-	padding: 5px;
+	padding: 10px;
 	background: rgba(155, 116, 117, .7);
 	float: left;
 	margin: 20px;
@@ -498,15 +503,15 @@ div#job{
 }
 
 #job ul li a{
-	font-size: 1.500em;/*15px*/
+	font-size: 1.100em;/*15px*/
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #fff;
 	text-decoration: none;
-	border-bottom: 2px solid #fff
+	border-bottom: 1px solid #fff
 }
 
 #job ul li a:hover{
-	border-bottom: 2px solid #000;
+	border-bottom: 1px solid #000;
 	color: #000;
 }
 
@@ -516,12 +521,20 @@ form#message{
 	clear: left;
 	background: rgba(65, 49, 39, .7);
 	width: 815px;
+	height: 400px;
 	margin: 15px 0px 15px 20px;
+	overflow: hidden;
+
 
 }
 
-#message h3{
-	margin: 5px 0px 2px 10px;
+#message h3, #book h3{
+	margin: 10px 0px 2px 10px;
+	padding: 2px 5px;
+	background-color: rgba(155, 116, 117, .7);
+	width: 830px;
+
+
 }
 
 
@@ -544,6 +557,7 @@ form#message{
 }
 
 textarea {
+	min-width: 300px;
 	min-height: 100px;
 }
 
@@ -553,10 +567,12 @@ fieldset{
 }
 
 div#excuse{
-	width: 200px;
+	width: 250px;
 	float: left;
-	margin: 40px 0px 5px 30px;
+	margin: 55px 0px 5px 10px;
 	overflow: hidden;
+	position: absolute;
+	right: 250px;
 }
 
 div#excuse p{
@@ -568,7 +584,9 @@ form#book{
 	clear: left;
 	background: rgba(65, 49, 39, .7);
 	width: 815px;
+	height: 600px;
 	margin: 15px 0px 2px 20px;
+	overflow: hidden;
 }
 
 #book h3{
@@ -576,11 +594,32 @@ form#book{
 }
 
 #book label{
-	width: 300px;
+	width: 150px;
 	font-size: 1.700em;/*17px*/
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #fff;
-	margin: 0px 0px 2px 5px;
+	margin: 0px 5px 2px 5px;
+	float: left;
+	clear: left;
+	text-align: right;
+}
+
+#book input, #book textarea{
+	float: left;
+	width: 250px;
+	margin: 5px 0px 2px 5px;
+}
+
+#book select{
+	margin: 5px 0px 2px 0px;
+}
+
+div#formimage img{
+	margin: 5px 0px 20px 35px;
+}
+
+img#top{
+	margin-left: 100px;
 }
 
 
@@ -603,7 +642,7 @@ form#book{
 
 #aside ul li{
 	list-style-type: none;
-	margin: 5px 0px 5px 25px;
+	margin: 5px 0px 5px 15px;
 }
 
 /*	=	=	=	main =	=	=	*/
@@ -622,6 +661,7 @@ div#main{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 600px;
+	overflow: hidden;
 }
 
 .monthof{
@@ -631,7 +671,11 @@ div#main{
 	font-size: 20px;
 	font-family: 'CopystructNormal';
 	color: #fff;
+	overflow: hidden;
+}
 
+.monthof h2{
+	color: #fff;
 }
 
 .bandodd{
@@ -644,7 +688,7 @@ div#main{
 
 .bandodd p{
 	color: #fff;
-	padding: 5px;
+	padding: 6px 0px 0px 10px;
 }
 
 .priceodd{
@@ -657,7 +701,7 @@ div#main{
 
 .priceodd p{
 	color: #fff;
-	padding: 3px;
+	padding: 6px 0px 0px 10px;
 }
 
 .timeodd{
@@ -670,7 +714,7 @@ div#main{
 
 .timeodd p{
 	color: #fff;
-	padding: 3px;
+	padding: 6px 0px 0px 10px;
 }
 
 .bandeven{
@@ -683,7 +727,7 @@ div#main{
 
 .bandeven p{
 	color: #fff;
-	padding: 3px;
+	padding: 6px 0px 0px 10px;
 }
 
 .priceeven{
@@ -696,7 +740,7 @@ div#main{
 
 .priceeven p{
 	color: #fff;
-	padding: 3px;
+	padding: 6px 0px 0px 10px;
 }
 
 .timeeven{
@@ -709,20 +753,87 @@ div#main{
 
 .timeeven p{
 	color: #fff;
-	padding: 3px;
+	padding: 6px 0px 0px 10px;
 }
 
+/*	=	=	=	=	=	=	=	=	Blog	=	=	=	=	=	=	=	*/
+
+div#blogpage{
+	overflow: hidden;
+	margin-left: 50px;
+}
+
+div#blogpage h1{
+	margin: 5px 0px 5px 150px;
+	font-size: 2.700em;
+	padding: 0px 0px 0px 35px;
+}
+
+
+#blogpage h2{
+	font-size: 1.500em;
+	margin: 5px 0px 0px 5px;
+	padding: 10px 5px;
+	background-color: rgba(155, 116, 117, .7);
+	width: 600px;
+}
+
+.who{
+	margin: 2px 0px 3px 5px;
+	font-size: 1.200em;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
+}
+
+
+
+.entry p, li{
+	margin: 5px 0px 3px 20px;
+	font-size: 1.400em;
+	color: #fff;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.entry li{
+	margin-left: 25px;
+}
+
+.entry h4{
+	color: #59181e;
+}
+
+article{
+	margin: 5px 0px 30px 50px;
+	background-color: rgba(65, 49, 39, .7);
+	width: 600px;
+	padding: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+}
+
+div#comments{
+	margin: 10px 0px 5px 150px;
+}
+
+#comments a{
+	padding: 5px;
+	font-size: 1.300em;
+	font-family: Futura "Trebuchet Ms", Arial, sans-serif;
+}
 
 /*	=	=	=	=	=	=	=	=	=	FAQ	=	=	=	=	=	=	=	*/
 
 ul#category li a {
-	font-size: 1.500em;/*15px*/
+	font-size: 1.000em;/*15px*/
 	font-family: Futura, "Trebuchet Ms", Arial, sans-serif;
 	color: #fff;
 	text-decoration: none;
 	border-bottom: 2px solid #fff;
 	list-style-type: circle;
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 ul#category li a:hover{
@@ -755,6 +866,44 @@ div#questions dd, dt{
 div#questions dd{
 	margin-left: 25px;
 }
+
+
+/*	=	=	=	=	=	=	Gallery	=	=	=	=	=	=	=	*/
+
+#gallerypage{
+	margin-left: 60px;
+}
+
+#gallerypage h1{
+	margin-left: 350px;
+}
+
+figure{
+	float: left;
+	height: 300px;
+	margin: 10px 10px 10px 20px;
+	position: relative;
+}
+
+figcaption{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(155, 116, 117, .9);
+	color: #fff;
+	height: 15px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 1.200em;
+	margin: 0 0px 2px 7px;
+	padding: 3px;
+}
+
+img{
+	max-width: 100%;
+}
+
+
 
 /*	=	=	=	=	=	=	Media Queries	=	=	=	=	=	*/
 

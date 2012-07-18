@@ -379,6 +379,8 @@ div#wrapper{
 /*	=	=	=	Button 	=	=	=	*/
 
 button {
+	float: left;
+	clear: left;
 	width: 150px;
 	height: 30px;
 	margin: 5px 0px 5px 75px;
@@ -397,6 +399,10 @@ button {
    vertical-align: center;
    border: none;
    }
+
+button#send{
+	margin-left: 160px;
+}
 
 button a{
 	font-family: Futura, "Trebuchet MS", Arial, Sans-Serif;
@@ -511,29 +517,50 @@ form#message{
 	background: rgba(65, 49, 39, .7);
 	width: 815px;
 	margin: 15px 0px 15px 20px;
+
 }
 
 #message h3{
 	margin: 5px 0px 2px 10px;
 }
 
+
 #message label{
-	display: block;
 	font-size: 1.700em;/*17px*/
+	float: left;
+	clear: left;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #fff;
-	margin: 0px 0px 2px 5px;
-	width: 300px;
-
+	margin: 5px 0px 2px 10px;
+	width: 150px;
+	text-align: right;
 }
 
-#message input{
-	width: 200px;
+#message input, #message select, #message textarea{
+	float: left;
+	width: 250px;
 	height: 15px;
+	margin: 5px 0px 2px 5px;
+}
+
+textarea {
+	min-height: 100px;
+}
+
+fieldset{
+	float: left;
+	overflow: hidden;
 }
 
 div#excuse{
 	width: 200px;
+	float: left;
+	margin: 40px 0px 5px 30px;
+	overflow: hidden;
+}
+
+div#excuse p{
+	color: #fff;
 }
 /*	=	=	=	Book show =	=	=	*/
 

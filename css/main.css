@@ -56,6 +56,7 @@ body{
 	background: url(../images/background.jpg);
 	margin: 0 auto;
 	font-size: 62.5%;
+	width: 1000px;
 }
 
 header{
@@ -97,8 +98,8 @@ h4{
 /*	=	=	footer nav	=	=	*/
 div#footer{
 	background: rgba(155, 116, 117, .7);
+	width: 100%;
 	clear: left;
-	margin: 0 auto;
 	height: 240px;
 }
 
@@ -116,7 +117,7 @@ div#footer{
 
 #footer ul li:first-child{
 	border: none;
-	margin-left: 22.25%;/*200 somethingpx*/
+	margin-left: 15%;/*150/1000*/
 }
 
 #footer ul li a{
@@ -131,14 +132,14 @@ div#footer{
 /*	=	=	Rest of footer	=	=	*/
 #footer img{
 	margin-top: 20px;
-	margin-left: 22.25%;/*200 somethingpx*/
+	margin-left: 18%;/*180/1000*/
 	float: left;
 }
 
 div#doors{
 	float: left;
-	width: 250px;
-	margin: 20px 10px;
+	width: 25%; /*250/1000*/
+	margin: 2% 1.5%; /*20/1000 15/1000*/ 
 }
 
 div#doors p{
@@ -147,8 +148,8 @@ div#doors p{
 
 div#hours{
 	float: left;
-	width: 250px;
-	margin: 20px 10px;
+	width: 25%;/*250/1000*/
+	margin: 2% 0%; /*20/1000*/
 }
 
 div#hours p{
@@ -158,7 +159,7 @@ div#hours p{
 div#copyright{
 	clear: left;
 	width: 52.083333333333%;/*500px*/
-	margin-left: 37.479166666667%;/*475px*/
+	margin-left: 30%;/*300/1000*/
 }
 
 div#copyright p{
@@ -167,55 +168,63 @@ div#copyright p{
 
 div#social{
 	clear: left;
-	margin-left: 22.25%; /*200 something*/
+	margin-left: 45%; /*450/1000*/
 }
 
 div#social img{
 	margin-top: 0;
 	margin-left: 0;
-	padding: 0px 5px;
+	padding: 0% .5%; /*5/1000*/
 }
 /*	=	=	Navigation	=	=	*/
 
+header{
+	margin: 0 auto;
+}
+
 nav{
 	position: relative;
+	bottom: 10px;
 }
 
 
  nav ul{
 	background: #59181e;
 	border-radius: 10px;
-	width: 80%;/*960px*/
+	width: 96%;/*960px*/
 	height: 55px;
-	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
 }
 
+
+
  nav ul li{
 	display: inline;
 	float: left;
+	width: 10%;/*90/1000*/
 	list-style: none;
 	font-size: 1.500em;/*15px*/
 	font-family: 'CopystructNormal';
-	border-left: 2px solid #000000;
-}
-
-nav ul li:last-child{
-	border-right: 2px solid #000000;
+	padding: 5px;
+	margin-right: 15px;
+	text-align: center;
 }
 
 nav ul li:first-child{
-	border: none;
+	background: url(../images/Live-logogrey.png) no-repeat;
+	padding-left: 80px;
+	margin-left: 50px;
 }
 
  nav ul li a{
  	display: block;
  	height: 55px;
- 	margin: 10px 30px 0px 30px;
-	padding: 5px 5px 0px 5px;
 	text-decoration: none;
+
 }
+
+
 
 a:link{
 	color: #989898;
@@ -227,6 +236,7 @@ a:visited{
 
 a:hover{
 	color: #b27f7f;
+	border-bottom: 1px solid #b27f7f;
 }
 
 
@@ -235,15 +245,13 @@ a:hover{
 }
 
 .image{
-	margin: 0px 10px 0px 70px;
 	padding: 0;
 }
 
 /*	=	=	=	=	=	=	=	=	Home	=	=	=	=	=	=	=	*/
 
 div#head{
-	margin: -10px 0px 0px 113px;
-	max-width: 80%;/*960px*/
+	max-width: 100%;
 	height: 290px;
 }
 
@@ -252,16 +260,20 @@ div#head{
 	margin: 0px;
 }
 
+div#poster{
+	margin: 0 auto;
+}
+
 div#posters img{
 	max-width: 100%;
 }
 
 #posters h1{
-	margin-left: 450px;
+	margin-left: 35%; /*350/1000*/
 }
 
 #posters ul{
-	margin-left: 120px;
+
 }
 
 #posters ul li{
@@ -273,7 +285,7 @@ div#posters img{
 /*	=	=	Secondary content =	=	*/
 
 div#secondary{
-	margin-left: 110px;
+	
 }
 
 div#directions{
@@ -371,10 +383,6 @@ div#gallery{
 
 /*	=	= 	=	=	=	=	=	=	Forms	=	=	=	=	=	=	=	*/
 
-div#wrapper{
-	margin: 10px 0px 20px 150px;
-	width: 960px;
-}
 
 #wrapper h1{
 	margin-left: 350px;
@@ -402,6 +410,8 @@ button {
    color: white;
    vertical-align: center;
    border: none;
+   text-decoration: none;
+   color: #fff;
    }
 
 button.big{
@@ -410,10 +420,10 @@ button.big{
 }
 
 button a{
-	font-family: Futura, "Trebuchet MS", Arial, Sans-Serif;
+	/*font-family: Futura, "Trebuchet MS", Arial, Sans-Serif;
 	color: #fff;
    text-decoration: none;
-   font-size: 1.500em;/*15px*/
+   font-size: 1.500em;/*15px*/*/
 
 }
 
@@ -434,7 +444,7 @@ button:active {
 /*	=	=	=	Newsletter	=	=	=	*/
 form#newsletter{
 	margin-top: 20px;
-	width: 375px;
+	width: 44%;/*440/1000*/
 	height: 370px;
 	padding: 10px;
 	background: rgba(155, 116, 117, .7);
@@ -475,7 +485,7 @@ form#newsletter{
 /*	=	=	=	Job	=	=	=	*/
 
 div#job{
-	width: 375px;
+	width: 44%;/*440/1000*/
 	height: 370px;
 	background: rgba(155, 116, 117, .7);
 	padding: 5px;
@@ -520,10 +530,15 @@ div#job{
 form#message{
 	clear: left;
 	background: rgba(65, 49, 39, .7);
-	width: 815px;
+	width: 96%;
 	height: 400px;
 	margin: 15px 0px 15px 20px;
 	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 
 
 }
@@ -566,7 +581,7 @@ fieldset{
 	overflow: hidden;
 }
 
-div#excuse{
+div.side{
 	width: 250px;
 	float: left;
 	margin: 55px 0px 5px 10px;
@@ -575,7 +590,7 @@ div#excuse{
 	right: 250px;
 }
 
-div#excuse p{
+div.side p{
 	color: #fff;
 }
 /*	=	=	=	Book show =	=	=	*/
@@ -583,10 +598,15 @@ div#excuse p{
 form#book{
 	clear: left;
 	background: rgba(65, 49, 39, .7);
-	width: 815px;
-	height: 600px;
+	width: 96%;
+	height: 700px;
 	margin: 15px 0px 2px 20px;
 	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 }
 
 #book h3{
@@ -611,16 +631,11 @@ form#book{
 }
 
 #book select{
+	float: left;
 	margin: 5px 0px 2px 0px;
 }
 
-div#formimage img{
-	margin: 5px 0px 20px 35px;
-}
 
-img#top{
-	margin-left: 100px;
-}
 
 
 /*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
@@ -632,26 +647,33 @@ img#top{
 	width: 275px;
 	height: 400px;
 	float: left;
-	margin-left: 30px;
-	margin-top: 40px;
 }
 
 #aside h3{
-	margin: 5px 0px 5px 55px;
+	margin: 10px 0px 0px 20px;
+}
+
+#aside p{
+	color: #fff;
+	margin-left: 20px;
+}
+
+#aside ul{
+
 }
 
 #aside ul li{
 	list-style-type: none;
-	margin: 5px 0px 5px 15px;
+
 }
 
 /*	=	=	=	main =	=	=	*/
 
-div#main{
-	margin-left: 400px;
+div.main{
+	margin-left: 350px;
 }
 
-#main h1{
+.main h1{
 	margin-left: 100px;
 }
 
@@ -758,19 +780,19 @@ div#main{
 
 /*	=	=	=	=	=	=	=	=	Blog	=	=	=	=	=	=	=	*/
 
-div#blogpage{
+ div#blogpage{
 	overflow: hidden;
-	margin-left: 50px;
+
 }
 
-div#blogpage h1{
+ div#blogpage h1{
 	margin: 5px 0px 5px 150px;
 	font-size: 2.700em;
 	padding: 0px 0px 0px 35px;
 }
 
 
-#blogpage h2{
+ #blogpage h2{
 	font-size: 1.500em;
 	margin: 5px 0px 0px 5px;
 	padding: 10px 5px;
@@ -785,9 +807,11 @@ div#blogpage h1{
 
 }
 
+.entry dt{
+	color: #59181e;
+}
 
-
-.entry p, li{
+.entry p, li, dd{
 	margin: 5px 0px 3px 20px;
 	font-size: 1.400em;
 	color: #fff;
@@ -831,9 +855,7 @@ ul#category li a {
 	font-family: Futura, "Trebuchet Ms", Arial, sans-serif;
 	color: #fff;
 	text-decoration: none;
-	border-bottom: 2px solid #fff;
-	list-style-type: circle;
-	margin-left: 15px;
+	border-bottom: 1px solid #fff;
 }
 
 ul#category li a:hover{
@@ -871,11 +893,11 @@ div#questions dd{
 /*	=	=	=	=	=	=	Gallery	=	=	=	=	=	=	=	*/
 
 #gallerypage{
-	margin-left: 60px;
+	
 }
 
 #gallerypage h1{
-	margin-left: 350px;
+	margin-left: 375px;
 }
 
 figure{
@@ -883,6 +905,12 @@ figure{
 	height: 300px;
 	margin: 10px 10px 10px 20px;
 	position: relative;
+	opacity: .7;
+}
+
+figure:hover{
+	opacity: 1;
+	border-bottom: none;
 }
 
 figcaption{

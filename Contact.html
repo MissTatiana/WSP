@@ -23,7 +23,7 @@
 		</nav>
 	</header>
 
-	<div id="wrapper">
+	
 
 		<h1>Contact Us</h1>
 		<form id="newsletter">
@@ -35,22 +35,22 @@
 			</ul>
 			<fieldset>
 				<div>
-					<label for="wholename">Your name:</label>
-					<input type="text" id="wholename" name="wholename" />
+					<label for="wholename">Your name</label>
+					<input type="text" id="wholename" name="wholename" required />
 				</div>
 
 				<div>
-					<label for="news-email">Your email address:</label>
-					<input type="email" id="news-email" name="news-email" placeholder="example@email.com"/>
+					<label for="news-email">Your email address</label>
+					<input type="email" id="news-email" name="news-email" placeholder="example@email.com" required />
 				</div>
 
 				<div>
 					<label for="password">Create a password</label>
-					<input type="password" id="password" name="password" />
+					<input type="password" id="password" name="password" required />
 				</div>
 
 				<div id="check">
-					<input type="checkbox" name="terms" value="agree" />Agree to terms and services
+					<input type="checkbox" name="terms" value="agree" required /><p>Agree to terms and services<p>
 				</div>
 
 				<button><a href="#">Join!</a></button>
@@ -81,17 +81,17 @@
 			<legend><h3>Send us a message</h3></legend>
 				<div>
 					<label for="name">Your Name</label>
-					<input type="text" id="name" name="name" />
+					<input type="text" id="name" name="name" required />
 				</div>
 
 				<div>
 					<label for="email">Email address</label>
-					<input type="email" id="email" name="email" placeholder="example@email.com"/>
+					<input type="email" id="email" name="email" placeholder="example@email.com" required />
 				</div>
 
 				<div>
 					<label for="phone">Phone number</label>
-					<input type="number" id="phone" name="phone" placeholder="(000)000-0000"/>
+					<input type="number" id="phone" name="phone" placeholder="(000)000-0000" required />
 				</div>
 
 				<div>
@@ -111,7 +111,7 @@
 
 				<div>
 					<label for="subject">Subject</label>
-					<input type="text" id="subject" name="subject" />
+					<input type="text" id="subject" name="subject" required />
 				</div>
 
 				<div>
@@ -132,16 +132,16 @@
 			<legend><h3>Book a show</h3></legend>
 				<div>
 					<label for="bandname">Band name</label>
-					<input type="text" id="bandname" name="bandname" />
+					<input type="text" id="bandname" name="bandname" required />
 				<div>
 
 				<div>
 					
 						<label for="bandphone">Band's number</label>
-						<input type="phone" id="bandphone" name="bandphone" placeholder="(000)000-0000"/>
+						<input type="phone" id="bandphone" name="bandphone" placeholder="(000)000-0000" required />
 
 						<label for="bandemail">Band's email</label>
-						<input type="email" id="bandemail" name="bandemail" placeholder="example@email.com"/>
+						<input type="email" id="bandemail" name="bandemail" placeholder="example@email.com" required />
 					
 				</div>
 			
@@ -149,16 +149,16 @@
 			
 				<div>
 					<label for="agent">Agent</label>
-					<input type="text" id="agent" name="agent" />
+					<input type="text" id="agent" name="agent" required />
 				</div>
 
 				<div>
 				
 						<label for="agentphone">Agent's number</label>
-						<input type="phone" id="agentphone" name="agentphone" placeholder="(000)000-0000" />
+						<input type="phone" id="agentphone" name="agentphone" placeholder="(000)000-0000" required />
 
 						<label for="agentemail">Agent's email</label>
-						<input type="email" id="agentemail" name="adgentemail" placeholder="example@email.com" />
+						<input type="email" id="agentemail" name="adgentemail" placeholder="example@email.com" required />
 					
 				</div>
 			
@@ -171,12 +171,12 @@
 
 				<div>
 					<label for="link">Link to band site</label>
-					<input type="text" id="link" name="link" />
+					<input type="text" id="link" name="link" required />
 				</div>
 
 				<div>
 					<label for="demo">Demo file</label>
-					<input type="file" id="demo" name="demo" />
+					<input type="file" id="demo" name="demo" required />
 				</div>
 
 				<div>
@@ -240,7 +240,7 @@
 
 				<div>
 					<label for="rate">Asking rate:</label>
-					<input type="text" id="rate" name="rate" placeholder="$0.00"/>
+					<input type="text" id="rate" name="rate" placeholder="$0.00" required/>
 				</div>	
 
 				<div>
@@ -259,12 +259,12 @@
 
 		</form><!-- book -->
 
-	</div><!-- wrapper -->
+	
 
 	
 	<div id="footer">
 		<ul>
-			<li><a href="Plaza-index.html">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="Calendar.html">Calendar</a></li>
 			<li><a href="Blog.html">Blog</a></li>
 			<li><a href="Gallery.html">Gallery</a></li>

@@ -56,11 +56,11 @@ body{
 	background: url(../images/background.jpg);
 	margin: 0 auto;
 	font-size: 62.5%;
-	width: 1000px;
+	width: 96%;
 }
 
 header{
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 p, dt, dd{
@@ -93,94 +93,18 @@ h4{
 	color: #ffffff;
 }
 
-/*	=	=	=	footer	=	=	=	*/
 
-/*	=	=	footer nav	=	=	*/
-div#footer{
-	background: rgba(155, 116, 117, .7);
-	width: 100%;
-	clear: left;
-	height: 240px;
-}
-
-#footer ul{
-	background: rgba(65, 49, 39, .7);
-	width: 100%;
-}
-
-#footer ul li{
-	display: inline;
-	width: 07.291666666667%;/*70px*/
-	height: 40px;
-	border-left: 3px solid #59181e;
-}
-
-#footer ul li:first-child{
-	border: none;
-	margin-left: 15%;/*150/1000*/
-}
-
-#footer ul li a{
-	height: 40px;
-	margin: .520833333333% 1.041666666667%;/*5px 10px*/
-	padding: 0% .520833333333%;/*0px 5px*/
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 1.500em;/*20px*/
-	text-decoration: none;
-}
-
-/*	=	=	Rest of footer	=	=	*/
-#footer img{
-	margin-top: 20px;
-	margin-left: 18%;/*180/1000*/
-	float: left;
-}
-
-div#doors{
-	float: left;
-	width: 25%; /*250/1000*/
-	margin: 2% 1.5%; /*20/1000 15/1000*/ 
-}
-
-div#doors p{
-	color: #59181e;
-}
-
-div#hours{
-	float: left;
-	width: 25%;/*250/1000*/
-	margin: 2% 0%; /*20/1000*/
-}
-
-div#hours p{
-	color: #59181e;
-}
-
-div#copyright{
-	clear: left;
-	width: 52.083333333333%;/*500px*/
-	margin-left: 30%;/*300/1000*/
-}
-
-div#copyright p{
-	color: #59181e;
-}
-
-div#social{
-	clear: left;
-	margin-left: 45%; /*450/1000*/
-}
-
-div#social img{
-	margin-top: 0;
-	margin-left: 0;
-	padding: 0% .5%; /*5/1000*/
-}
 /*	=	=	Navigation	=	=	*/
 
 header{
 	margin: 0 auto;
 }
+
+header img{
+	max-width: 100%;
+	width: 100%;
+}
+
 
 nav{
 	position: relative;
@@ -191,7 +115,7 @@ nav{
  nav ul{
 	background: #59181e;
 	border-radius: 10px;
-	width: 96%;/*960px*/
+	width: 100%;/*960px*/
 	height: 55px;
 	padding: 0;
 	overflow: hidden;
@@ -261,7 +185,7 @@ div#head{
 }
 
 div#poster{
-	margin: 0 auto;
+	margin-left: 10%;
 }
 
 div#posters img{
@@ -285,13 +209,13 @@ div#posters img{
 /*	=	=	Secondary content =	=	*/
 
 div#secondary{
-	
+	margin-right: 5%;	
 }
 
 div#directions{
-	width: 280px;
+	width: 29.166666666667%; /*280/960*/
 	height: 400px;
-	margin: 10px 20px;
+	margin: 01.041666666667% 02.083333333333%; /*10/960 20/960*/
 	overflow: hidden;
 	clear: left;
 	float: left;
@@ -299,11 +223,12 @@ div#directions{
 }
 
 #directions h3{
-	margin: 5px 0px 5px 55px;
+	margin: 01.785714285714% 0 01.785714285714% 19.642857142857%; /*5/280 55/280*/
 }
 
 #directions img{
-	margin: 5px 10px;
+	width: 100%;
+	max-width: 100%;
 }
 
 #directions h4{
@@ -313,12 +238,13 @@ div#directions{
 }
 
 #directions ul{
-	margin: 5px 5px 5px 20px;
+	margin: 5px 5px 5px 10px;
 }
 
 #directions ul li{
 	color: #ffffff;
-	margin: 5px;
+	margin: 01.785714285714%; /*5/280*/
+	list-style-type: none;
 }
 
 #directions ul li a{
@@ -335,50 +261,50 @@ div#directions{
 }
 
 div#blog{
-	width: 280px;
+	width: 29.166666666667%; /*280/960*/
 	height: 400px;
-	margin: 10px 20px;
+	margin: 01.041666666667% 02.083333333333%; /*10/960 20/960*/
 	overflow: hidden;
 	float: left;
 	background: rgba(65, 49, 39, .7);
 }
 
 #blog h3{
-	margin: 5px 0px 5px 110px;
+	margin: 01.785714285714% 0 01.785714285714% 39.285714285714%; /*5/280 110/280*/
 }
 
 #blog a{
 	color: #ffffff;
 	text-decoration: none;
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
 	float: right;
-	margin: 5px 10px 5px 0px;
+	margin: 01.785714285714% 03.571428571429% 01.785714285714% 0px; /*5/280 10/280*/
 }
 
 #blog h4{
 	clear: right;
-	margin: 10px 5px 10px 5px;
+	margin: 03.571428571429% 01.785714285714% 03.571428571429% 01.785714285714%; /*10/280 5/280*/
 }
 
 #blog p{
-	margin: 5px;
+	margin: 01.785714285714%;/*5/280*/
 }
 
 div#gallery{
-	width: 280px;
+	width: 29.166666666667%; /*280/960*/
 	height: 400px;
-	margin: 10px 20px;
+	margin: 01.041666666667% 02.083333333333%; /*10/960 20/960*/
 	overflow: hidden;
 	float: left;
 	background: rgba(65, 49, 39, .7);
 }
 
 #gallery h3{
-	margin: 5px 0px 5px 55px;
+	margin: 01.785714285714% 0 0 19.642857142857%; /*5/280 55/280*/
 }
 
 #gallery img{
-	margin: 5px 10px;
+	margin: 0.714285714286% 03.571428571429%; /*2/280 10/280*/
 }
 
 /*	=	= 	=	=	=	=	=	=	Forms	=	=	=	=	=	=	=	*/
@@ -1000,9 +926,156 @@ img{
 }
 
 
+/*	=	=	=	=	=	=	=		footer	=	=	=	=	=	=	=	*/
 
-/*	=	=	=	=	=	=	Media Queries	=	=	=	=	=	*/
+/*	=	=	footer nav	=	=	*/
+div#footer{
+	background: rgba(155, 116, 117, .7);
+	width: 100%;
+	clear: left;
+	height: 240px;
+}
+
+#footer ul{
+	background: rgba(65, 49, 39, .7);
+	width: 100%;
+}
+
+#footer ul li{
+	display: inline;
+	width: 07.291666666667%;/*70px*/
+	height: 40px;
+	border-left: 3px solid #59181e;
+}
+
+#footer ul li:first-child{
+	border: none;
+	margin-left: 15%;/*150/1000*/
+}
+
+#footer ul li a{
+	height: 40px;
+	margin: .520833333333% 1.041666666667%;/*5px 10px*/
+	padding: 0% .520833333333%;/*0px 5px*/
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 1.500em;/*20px*/
+	text-decoration: none;
+}
+
+/*	=	=	Rest of footer	=	=	*/
+#footer img{
+	margin-top: 20px;
+	margin-left: 18%;/*180/1000*/
+	float: left;
+	
+}
+
+div#doors{
+	float: left;
+	width: 25%; /*250/1000*/
+	margin: 2% 1.5%; /*20/1000 15/1000*/ 
+}
+
+div#doors p{
+	color: #59181e;
+}
+
+div#hours{
+	float: left;
+	width: 25%;/*250/1000*/
+	margin: 2% 0%; /*20/1000*/
+}
+
+div#hours p{
+	color: #59181e;
+}
+
+div#copyright{
+	clear: left;
+	width: 52.083333333333%;/*500px*/
+	margin-left: 30%;/*300/1000*/
+}
+
+div#copyright p{
+	color: #59181e;
+}
+
+div#social{
+	clear: left;
+	margin-left: 45%; /*450/1000*/
+}
+
+div#social img{
+	margin-top: 0;
+	margin-left: 0;
+	padding: 0% .5%; /*5/1000*/
+}
+
+
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
+							Media Queries
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
 
 @media screen and (max-width: 400px){
 
+	body{
+		width: 400px;
+	}
+
+	/*	=	=	Navigation	=	=	*/
+
+	
+
+	header img{
+		display: none;
+	}
+
+
+	nav{
+		position: relative;
+		bottom: 10px;
+	}
+
+
+	 nav ul{
+		width: 100%;/*400*/
+		height: 40px;
+		padding: 0;
+		overflow: hidden;
+	}
+
+
+
+ 	nav ul li{
+		display: inline;
+		float: left;
+		list-style: none;
+		font-size: 1.000em;/*15px*/
+		font-family: 'CopystructNormal';
+		padding-top: 10px;
+		margin-left: 3px;
+		text-align: center;
+		
+	}
+
+	nav ul li:first-child{
+		background: none;
+		margin-left: 5px;
+		padding: 0;
+		padding-top: 10px;
+	}
+
+ 	nav ul li a{
+ 		height: 40px;
+	
+	}
+
+
+	/* 	=	=	=	=	=	=	Home	=	=	=	=	=	*/
+
+
+	div#secondary{
+		display: none;
+	}
 }

@@ -172,6 +172,7 @@ a:hover{
 	padding: 0;
 }
 
+
 /*	=	=	=	=	=	=	=	=	Home	=	=	=	=	=	=	=	*/
 
 div#head{
@@ -229,8 +230,7 @@ div#directions{
 }
 
 #directions img{
-	width: 100%;
-	max-width: 100%;
+	margin: 03.571428571429% 02.857142857143%; /*10/280 8/280*/
 }
 
 #directions h4{
@@ -614,38 +614,42 @@ form#book{
 
 #aside{
 	background: rgba(155, 116, 117, .7);
-	width: 275px;
+	width: 28.645833333333%; /*275/960*/
 	height: 400px;
 	float: left;
 }
 
 #aside h3{
-	margin: 10px 0px 0px 20px;
+	margin: 03.891050583658% 0 0 07.272727272727%; 10/275 20/275
 }
 
 #aside p{
 	color: #fff;
-	margin-left: 20px;
+	margin-left: 07.272727272727%; /*20/275*/
 }
 
 #aside ul{
-
+	width: 90%;
 }
 
 #aside ul li{
 	list-style-type: none;
+}
 
+#aside ul li img{
+	width: 100%;
+	max-width: 100%;
 }
 
 /*	=	=	=	main =	=	=	*/
 
 div.main{
-	margin-left: 350px;
+	margin-left: 35%;/*350/1000*/
 }
 
 .main h1{
 	margin-left: 0px;
-	padding: 10px 5px;
+	padding: 1% 00.5%; /*10/1000 5/1000*/
 }
 
 /*	=	=	= Months	=	=	=	*/
@@ -653,15 +657,15 @@ div.main{
 .month{
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 600px;
+	width: 100%; /*100% of 960*/
 	overflow: hidden;
 }
 
 .monthof{
 	background: #59181e;
-	width: 590px;
-	padding: 5px 0px 5px 10px;
-	font-size: 20px;
+	width: 100%;
+	padding: .520833333333% 0 .520833333333% 01.041666666667%; /*5/960 10/960*/
+	font-size: 2.000em;/*20px*/
 	font-family: 'CopystructNormal';
 	color: #fff;
 	overflow: hidden;
@@ -673,7 +677,7 @@ div.main{
 
 .bandodd{
 	background: rgba(65, 49, 39, .7);
-	width: 200px;
+	width: 33.333333333333%;/*320/960*/
 	height: 51px;
 	padding-bottom: 5px;
 	float: left;
@@ -681,12 +685,13 @@ div.main{
 
 .bandodd p{
 	color: #fff;
-	padding: 6px 0px 0px 10px;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
+
 }
 
 .priceodd{
 	background: rgba(65, 49, 39, .7);
-	width: 200px;
+	width: 33.333333333333%;/*320/960*/
 	height: 51px;
 	padding-bottom: 5px;
 	float: left;	
@@ -694,12 +699,12 @@ div.main{
 
 .priceodd p{
 	color: #fff;
-	padding: 6px 0px 0px 10px;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
 }
 
 .timeodd{
 	background: rgba(65, 49, 39, .7);
-	width: 200px;
+	width: 33.333333333333%;/*320/960*/
 	height: 51px;
 	padding-bottom: 5px;
 	float: left;
@@ -707,12 +712,12 @@ div.main{
 
 .timeodd p{
 	color: #fff;
-	padding: 6px 0px 0px 10px;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
 }
 
 .bandeven{
 	background: rgba(65, 49, 39, .9);
-	width: 200px;
+	width: 33.333333333333%;/*320/960*/
 	height: 51px;
 	padding-bottom: 5px;
 	float: left;
@@ -720,12 +725,12 @@ div.main{
 
 .bandeven p{
 	color: #fff;
-	padding: 6px 0px 0px 10px;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
 }
 
 .priceeven{
 	background: rgba(65, 49, 39, .9);
-	width: 200px;
+	width: 33.333333333333%;/*320/960*/
 	height: 51px;
 	padding-bottom: 5px;
 	float: left;
@@ -738,7 +743,7 @@ div.main{
 
 .timeeven{
 	background: rgba(65, 49, 39, .9);
-	width: 200px;
+	width: 33.333333333333%;/*320/960*/
 	height: 51px;
 	padding-bottom: 5px;
 	float: left;
@@ -746,7 +751,7 @@ div.main{
 
 .timeeven p{
 	color: #fff;
-	padding: 6px 0px 0px 10px;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
 }
 
 /*	=	=	=	=	=	=	=	=	Blog	=	=	=	=	=	=	=	*/
@@ -1038,7 +1043,7 @@ div#social img{
 	}
 
 	h3{
-		font-size: 2.000em;/*20px*/
+		font-size: 1.500em;/*20px*/
 		font-family: 'CopystructNormal';
 		color: #59181e;
 	}
@@ -1138,7 +1143,7 @@ div#social img{
 		background: rgba(155, 116, 117, .7);
 		width: 100%;
 		clear: left;
-		height: 240px;	
+		height: 150px;	
 	}
 
 	#footer ul{
@@ -1221,4 +1226,159 @@ div#social img{
 		display: none;	
 	}
 
+	/*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
+
+	/*	=	=	=	Sidebar	=	=	=	*/
+
+	#aside{
+		background: none;
+		width: 28.645833333333%; /*275/960*/
+		height: 400px;
+		display: none;
+	}
+
+	#aside h3{
+		margin: 03.891050583658% 0 0 07.272727272727%; 10/275 20/275
+		display: none;
+	}
+
+	#aside p{
+		color: #fff;
+		margin-left: 07.272727272727%; /*20/275*/
+		display: none;
+	}
+
+	#aside ul{
+		width: 90%;
+	}
+
+	#aside ul li{
+		list-style-type: none;
+
+	}
+
+	#aside ul li img{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/*	=	=	=	main =	=	=	*/
+
+	div.main{
+		margin-left: 01.25%;/*5/400*/
+	}
+
+	.main h1{
+		margin-left: 20%;/*80/400*/
+		padding: 1% 00.5%; /*10/1000 5/1000*/
+	}
+
+	/*	=	=	= Months	=	=	=	*/
+
+	.month{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%; /*100% of 400*/
+		overflow: hidden;
+	}
+
+	.monthof{
+		background: #59181e;
+		width: 100%;
+		padding: .520833333333% 0 .520833333333% 01.041666666667%; /*5/960 10/960*/
+		font-size: 2.000em;/*20px*/
+		font-family: 'CopystructNormal';
+		color: #fff;
+		overflow: hidden;
+	}
+
+	.monthof h2{
+		color: #fff;
+		font-size: .800em; /*10px*/
+	}
+
+	.bandodd{
+		background: rgba(65, 49, 39, .7);
+		width: 33.333333333333%;/*320/960*/
+		height: 35px;
+		padding-bottom: 5px;
+		float: left;
+	}
+
+	.bandodd p{
+		color: #fff;
+		padding: 0.9375% 0 0.625% 0.9375%; /*3/320 2/320*/
+		font-size: 1.000em;
+
+	}
+
+	.priceodd{
+		background: rgba(65, 49, 39, .7);
+		width: 33.333333333333%;/*320/960*/
+		height: 35px;
+		padding-bottom: 5px;
+		float: left;	
+	}
+
+	.priceodd p{
+		color: #fff;
+		padding: 3px 0 2px 3px; /*6/320 10/320*/
+		font-size: 1.000em;
+	}
+
+	.timeodd{
+		background: rgba(65, 49, 39, .7);
+		width: 33.333333333333%;/*320/960*/
+		height: 35px;
+		padding-bottom: 5px;
+		float: left;
+	}
+
+	.timeodd p{
+		color: #fff;
+		padding: 3px 0 2px 3px; /*6/320 10/320*/
+		font-size: 1.000em;
+	}
+
+	.bandeven{
+		background: rgba(65, 49, 39, .9);
+		width: 33.333333333333%;/*320/960*/
+		height: 35px;
+		padding-bottom: 5px;
+		float: left;
+	}
+
+	.bandeven p{
+		color: #fff;
+		padding: 3px 0 2px 3px; /*6/320 10/320*/
+		font-size: 1.000em;	
+	}
+
+	.priceeven{
+		background: rgba(65, 49, 39, .9);
+		width: 33.333333333333%;/*320/960*/
+		height: 35px;
+		padding-bottom: 5px;
+		float: left;
+	}
+
+	.priceeven p{
+		color: #fff;
+		padding: 3px 0 2px 3px;
+		font-size: 1.000em;
+	}
+
+	.timeeven{
+		background: rgba(65, 49, 39, .9);
+		width: 33.333333333333%;/*320/960*/
+		height: 35px;
+		padding-bottom: 5px;
+		float: left;
+	}
+
+	.timeeven p{
+		color: #fff;
+		padding: 3px 0 2px 3px; /*6/320 10/320*/
+		font-size: 1.000em;
+	}
 }

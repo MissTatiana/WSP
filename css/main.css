@@ -634,6 +634,11 @@ form#book{
 
 #aside ul li{
 	list-style-type: none;
+	margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
+	font-size: 1.400em;
+	color: #fff;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
 }
 
 #aside ul li img{
@@ -758,26 +763,27 @@ div.main{
 
  div#blogpage{
 	overflow: hidden;
+	width: 70%; /*70% of 960 around 680px*/
 
 }
 
  div#blogpage h1{
-	margin: 5px 0px 5px 30px;
+	margin: 0.5% 0 0.5% 3%; /*5/1000 30/1000*/
 	font-size: 2.700em;
-	padding: 0px 0px 0px 35px;
+	padding: 0 0 0 4%; /*4/1000*/
 }
 
 
  #blogpage h2{
 	font-size: 1.500em;
-	margin: 5px 0px 0px 5px;
-	padding: 10px 5px;
+	margin: 0.5% 0 0 0.5%; /*5/1000*/
+	padding: 1.5% 1%; /*10/1000 5/1000*/
 	background-color: rgba(155, 116, 117, .7);
-	width: 600px;
+	width: 100%; 
 }
 
 .who{
-	margin: 2px 0px 3px 5px;
+	margin: 0.294117647059% 0 0.441176470588% 0.735294117647%; /*2/680 3/680 5/680*/
 	font-size: 1.200em;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
@@ -787,15 +793,15 @@ div.main{
 	color: #59181e;
 }
 
-.entry p, li, dd{
-	margin: 5px 0px 3px 20px;
+.entry p, .entry li, dd{
+	margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
 	font-size: 1.400em;
 	color: #fff;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 .entry li{
-	margin-left: 25px;
+	margin-left: 03.676470588235%;/*25/680*/
 }
 
 .entry h4{
@@ -803,10 +809,10 @@ div.main{
 }
 
 article{
-	margin: 5px 0px 30px 50px;
+	margin: 0.735294117647% 0 04.411764705882% 07.352941176471%; /*5/680 30/680 50/680*/
 	background-color: rgba(65, 49, 39, .7);
-	width: 600px;
-	padding: 10px;
+	width: 85%;
+	padding: 01.470588235294%; /*10/680*/
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
@@ -815,11 +821,11 @@ article{
 }
 
 div#comments{
-	margin: 10px 0px 5px 150px;
+	margin: 01.470588235294% 0 0.735294117647% 22.058823529412%; /*10/680 5/680 150/680*/
 }
 
 #comments a{
-	padding: 5px;
+	padding: 0.735294117647%; /*5/680*/
 	font-size: 1.300em;
 	font-family: Futura "Trebuchet Ms", Arial, sans-serif;
 }
@@ -1381,4 +1387,73 @@ div#social img{
 		padding: 3px 0 2px 3px; /*6/320 10/320*/
 		font-size: 1.000em;
 	}
+
+	/*	=	=	=	=	=	=	=	=	Blog	=	=	=	=	=	=	=	*/
+
+ 	div#blogpage{
+		overflow: hidden;
+		width: 100%; /*100% of 400 around 680px*/
+	}
+
+	 div#blogpage h1{
+		margin: 0.5% 0 0.5% 17.5%; /*5/1000 30/1000*/
+		font-size: 2.000em;
+		padding: 0 0 0 4%; /*4/1000*/
+	}
+
+
+ 	#blogpage h2{
+		font-size: 1.500em;
+		margin: 0.5% 0 0 0.5%; /*5/1000*/
+		padding: 1.5% 1%; /*10/1000 5/1000*/
+		background-color: rgba(155, 116, 117, .7);
+		width: 100%; 
+	}
+
+	.who{
+		margin: 0.294117647059% 0 0.441176470588% 0.735294117647%; /*2/680 3/680 5/680*/
+		font-size: 1.200em;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	}
+
+	.entry dt{
+		color: #59181e;
+	}
+
+	.entry p, .entry li, dd{
+		margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
+		font-size: 1.400em;
+		color: #fff;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	}
+
+	.entry li{
+		margin-left: 0.5%;/*25/680*/
+	}
+
+	.entry h4{
+		color: #59181e;
+	}
+
+	article{
+		margin: 0.735294117647% 0 04.411764705882% 01.25%; /*5/680 30/680 50/680*/
+		background-color: rgba(65, 49, 39, .7);
+		width: 90%;
+		padding: 01.470588235294%; /*10/680*/
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+	div#comments{
+		margin: 01.470588235294% 0 0.735294117647% 07.5%; /*10/680 5/680 30/400*/
+	}
+
+	#comments a{
+		padding: 0.735294117647%; /*5/680*/
+		font-size: 1.300em;
+		font-family: Futura "Trebuchet Ms", Arial, sans-serif;
+	}	
 }

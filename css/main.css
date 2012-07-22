@@ -184,28 +184,30 @@ div#head{
 	margin: 0px;
 }
 
-div#poster{
-	margin-left: 10%;
+div#posters{
+	width: 100%; /*100% of 960*/
 }
 
-div#posters img{
+div#posters h1{
+	margin-left: 37.5%; /*360/960*/
+}
+
+#posters figure{
+	width: 22.395833333333%; /*215/960*/
+	margin: 01.041666666667% 01.041666666667% 05.208333333333% 01.041666666667%; /*10/960 50/950*/
+	opacity: 1;
+	height: 320px;
+}
+
+#posters figure img{
+	width: 100%;
 	max-width: 100%;
+	opacity: 1;
 }
 
-#posters h1{
-	margin-left: 35%; /*350/1000*/
+#posters figcaption{
+	display: none;
 }
-
-#posters ul{
-
-}
-
-#posters ul li{
-	display: inline;
-	float: left;
-	margin: 10px 10px 10px 10px;
-}
-
 /*	=	=	Secondary content =	=	*/
 
 div#secondary{
@@ -1023,6 +1025,30 @@ div#social img{
 		width: 400px;
 	}
 
+	h1{
+		font-size: 2.000em;/*15px*/
+		font-family: 'CopystructNormal';
+		color: #59181e;
+	}
+
+	h2{
+		font-size: 1.100em;/*22px*/
+		font-family: 'CopystructNormal';
+		color: #59181e;
+	}
+
+	h3{
+		font-size: 2.000em;/*20px*/
+		font-family: 'CopystructNormal';
+		color: #59181e;
+	}
+
+	h4{
+		font-size: 1.700em;/*17px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #ffffff;
+	}
+
 	/*	=	=	Navigation	=	=	*/
 
 	
@@ -1075,7 +1101,124 @@ div#social img{
 	/* 	=	=	=	=	=	=	Home	=	=	=	=	=	*/
 
 
+	div#posters{
+		width: 100%; /*100% of 400*/
+		margin: 01.25; /*5/400*/
+	}
+
+	div#posters h1{
+		margin-left: 22.5%; /*90/400*/
+	}
+
+	#posters figure{
+		width: 40%; /*215/960*/
+		margin: 0;
+		opacity: 1;
+		padding: 02.325581395349%;/*5/215*/;
+		height: 250px;
+	}
+
+	#posters figure img{
+		opacity: 1;
+		margin: 04.651162790698%; /*10/215*/
+
+	}
+
+	#posters figcaption{
+		display: none;
+	}
+
 	div#secondary{
 		display: none;
 	}
+
+	/*	=	=	=	=	=	=	footer nav	=	=	=	=	=	=	*/
+
+	div#footer{
+		background: rgba(155, 116, 117, .7);
+		width: 100%;
+		clear: left;
+		height: 240px;	
+	}
+
+	#footer ul{
+		background: rgba(65, 49, 39, .7);
+		width: 100%;
+	}
+
+	#footer ul li{
+		display: inline;
+		width: 02.5%;/*10/400*/
+		height: 40px;
+		border-left: 0px solid #59181e;	
+	}
+
+	#footer ul li:first-child{
+		border: none;
+		margin-left: 01.75%;/*7/400*/
+	}
+
+	#footer ul li a{
+		height: 40px;
+		margin: .520833333333%;/*5px 10px*/
+		padding: 0%;/*0px 5px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-size: .900em;/*20px*/
+		text-decoration: none;
+	}
+
+	/*	=	=	=	Rest of footer	=	=	*/
+	#footer img{
+		margin-left: 18%;/*180/1000*/
+		float: left;
+		width: 100%;
+		max-width: 100%;	
+	}
+
+	div.contain{
+		width: 10%;
+		display: none;
+	}
+
+	div#doors{
+		width: 95%; /*250/1000*/
+		margin: 2% 1.5%; /*20/1000 15/1000*/ 
+		margin-left: 55px;
+	}
+
+	div#doors p{
+		color: #59181e;
+		font-size: 1.000em;
+		float: left;
+		padding-left: 2%; /*4/400*/
+	}
+
+	div#hours{
+		width: 100%;/*250/1000*/
+		margin: 2% 0%; /*20/1000*/
+		margin-left: 02.5; /*10/400*/
+	}
+
+	div#hours p{
+		color: #59181e;
+		font-size: 1.000em;
+		float: left;
+		padding-left: 2%;/*4/400*/
+	}
+
+	div#copyright{
+		width: 100%;
+		margin: 2% 1.5%; /*20/1000 15/1000*/
+		margin-left: 06.25%; /*25/400*/
+	}
+
+	div#copyright p{
+		color: #59181e;
+		font-size: 1.000em;
+	}
+
+	div#social{
+		display: none;	
+	}
+
 }

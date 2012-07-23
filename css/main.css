@@ -900,19 +900,20 @@ div#tickets, div#events, div#business{
 /*	=	=	=	=	=	=	Gallery	=	=	=	=	=	=	=	*/
 
 #gallerypage{
-	
+	width: 100%; /*100% of 960*/
 }
 
 #gallerypage h1{
-	margin-left: 375px;
+	margin-left: 39.0625%;/*375/960*/
 }
 
 figure{
 	float: left;
 	height: 300px;
-	margin: 10px 10px 10px 20px;
+	margin: 01.041666666667% 01.041666666667% 01.041666666667% 02.083333333333%;/*10/960 20/960*/
 	position: relative;
 	opacity: .7;
+	width: 20.833333333333%;/*215/960*/
 }
 
 figure:hover{
@@ -930,12 +931,13 @@ figcaption{
 	height: 15px;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	font-size: 1.200em;
-	margin: 0 0px 2px 7px;
-	padding: 3px;
+	margin: 0 0px 01.041666666667% 0.729166666667%;/*2/960 7/960*/
+	padding: 00.3125%;/*3/960*/
 }
 
-img{
+ figure img{
 	max-width: 100%;
+	width: 100%;
 }
 
 
@@ -1143,95 +1145,6 @@ div#social img{
 		display: none;
 	}
 
-	/*	=	=	=	=	=	=	footer nav	=	=	=	=	=	=	*/
-
-	div#footer{
-		background: rgba(155, 116, 117, .7);
-		width: 100%;
-		clear: left;
-		height: 150px;	
-	}
-
-	#footer ul{
-		background: rgba(65, 49, 39, .7);
-		width: 100%;
-	}
-
-	#footer ul li{
-		display: inline;
-		width: 02.5%;/*10/400*/
-		height: 40px;
-		border-left: 0px solid #59181e;	
-	}
-
-	#footer ul li:first-child{
-		border: none;
-		margin-left: 01.75%;/*7/400*/
-	}
-
-	#footer ul li a{
-		height: 40px;
-		margin: .520833333333%;/*5px 10px*/
-		padding: 0%;/*0px 5px*/
-		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-		font-size: .900em;/*20px*/
-		text-decoration: none;
-	}
-
-	/*	=	=	=	Rest of footer	=	=	*/
-	#footer img{
-		margin-left: 18%;/*180/1000*/
-		float: left;
-		width: 100%;
-		max-width: 100%;	
-	}
-
-	div.contain{
-		width: 10%;
-		display: none;
-	}
-
-	div#doors{
-		width: 95%; /*250/1000*/
-		margin: 2% 1.5%; /*20/1000 15/1000*/ 
-		margin-left: 55px;
-	}
-
-	div#doors p{
-		color: #59181e;
-		font-size: 1.000em;
-		float: left;
-		padding-left: 2%; /*4/400*/
-	}
-
-	div#hours{
-		width: 100%;/*250/1000*/
-		margin: 2% 0%; /*20/1000*/
-		margin-left: 02.5; /*10/400*/
-	}
-
-	div#hours p{
-		color: #59181e;
-		font-size: 1.000em;
-		float: left;
-		padding-left: 2%;/*4/400*/
-	}
-
-	div#copyright{
-		width: 100%;
-		margin: 2% 1.5%; /*20/1000 15/1000*/
-		margin-left: 06.25%; /*25/400*/
-	}
-
-	div#copyright p{
-		color: #59181e;
-		font-size: 1.000em;
-	}
-
-	div#social{
-		display: none;	
-	}
-
 	/*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
 
 	/*	=	=	=	Sidebar	=	=	=	*/
@@ -1393,6 +1306,7 @@ div#social img{
  	div#blogpage{
 		overflow: hidden;
 		width: 100%; /*100% of 400 around 680px*/
+		margin-left: 0;
 	}
 
 	 div#blogpage h1{
@@ -1456,4 +1370,417 @@ div#social img{
 		font-size: 1.300em;
 		font-family: Futura "Trebuchet Ms", Arial, sans-serif;
 	}	
+
+	/*	=	=	=	=	=	=	Gallery	=	=	=	=	=	=	=	*/
+
+	#gallerypage{
+		width: 100%; /*100% of 960*/
+	}
+
+	#gallerypage h1{
+		margin-left: 30%;/*120/400*/
+	}
+
+	figure{
+		float: left;
+		/*height: 300px;*/
+		margin: 01.041666666667% 01.041666666667% 01.041666666667% 02.083333333333%;/*10/960 20/960*/
+		position: relative;
+		opacity: .7;
+		width: 45%;/*215/960*/
+	}
+
+	figure:hover{
+		opacity: 1;
+		border-bottom: none;
+	}
+
+	figcaption{
+		display: block;
+			position: absolute;
+		bottom: 0;
+		width: 100%;
+		background: rgba(155, 116, 117, .9);
+		color: #fff;
+		height: 15px;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-size: 1.200em;
+		margin: 0 0px 01.041666666667% 0.729166666667%;/*2/960 7/960*/
+		padding: 00.3125%;/*3/960*/
+	}
+
+ 	figure img{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/*	=	= 	=	=	=	=	=	=	Forms	=	=	=	=	=	=	=	*/
+
+	h1{
+		margin-left: 32.5%;/*130/400*/
+	}
+
+	/*	=	=	=	Button 	=	=	=	*/
+
+	button {
+		float: left;
+		clear: left;
+		width: 150px;
+		height: 30px;
+		margin: 5px 0px 5px 100px;
+  		background: #5e1920;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#7e222a), to(#5e1920));
+   		background: -webkit-linear-gradient(top, #7e222a, #5e1920);
+   		background: -moz-linear-gradient(top, #7e222a, #5e1920);
+   		background: -ms-linear-gradient(top, #7e222a, #5e1920);
+   		background: -o-linear-gradient(top, #7e222a, #5e1920);
+   		padding: 7px 13px;
+	   	-webkit-border-radius: 11px;
+ 		-moz-border-radius: 11px;
+	   	border-radius: 11px;
+	   	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	   	color: white;
+	   	vertical-align: center;	
+	   	border: none;
+	   	text-decoration: none;
+	   	color: #fff;
+   	}
+
+	button.big{
+		margin-left: 165px;
+		margin-top: 10px
+	}
+
+	button:hover {
+	   border-top-color: #b27f7f;
+	   background: #59181e;
+   	}
+
+	button a:hover{
+		color: #000000;
+	}
+
+	button:active {
+	   border-top-color: #b27f7f;
+	   background: #b27f7f;
+   	}
+
+	/*	=	=	=	Newsletter	=	=	=	*/
+	form#newsletter{
+		margin-top: 20px;	
+		width: 90%;/*440/1000*/
+		height: 310px;
+		padding: .454545454546%; /*5/440*/
+		float: none;
+		margin: 02.272727272727%;/*10/440*/
+		overflow: hidden;
+	}
+
+	#newsletter h3{
+		margin: 01.136363636364% 0 0.454545454546% 0; /*5/440 2/440*/
+		background: rgba(65, 49, 39, .7);
+		padding: 3px 3px 3px 10px;
+		width: 100%;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	#newsletter ul li{
+		margin: 0.681818181818% 0 0.681818181818% 13.888888888889%; /*3/440 20/440*/
+		font-size: 1.500em;/*15px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+	}
+
+	#newsletter label{
+		display: none;
+		font-size: 1.700em;/*17px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin: 0px 0px 2px 5px;
+	}
+
+	#newsletter input{
+		width: 130%;/*400/440*/
+		height: 30px;
+		margin: .454545454546% 0 01.136363636364% 15px; /*2/440, 5/440, 30/440*/
+	}
+
+	#check input{
+		width: 10%;/*20/400*/
+		float: left;
+	}
+
+	#check p{
+		float: left;
+		color: #fff;
+		margin-left: 5px;
+		padding: 5px;
+		font-size: 1.500em
+	}
+
+	
+
+	/*	=	=	=	Job	=	=	=	*/
+
+	div#job{
+		width: 90%;/*440/1000*/
+		height: 360px;
+		background: rgba(155, 116, 117, .7);
+		padding: .454545454546%;
+		margin: 02.272727272727%;/*10/440*/
+		overflow: hidden;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+	#job h3{
+		margin: 01.136363636364% 0 0.454545454546% 0; /*5/440 2/440*/
+		background: rgba(65, 49, 39, .7);
+		padding: 0.681818181818% 0.681818181818% 0.681818181818% 02.272727272727%; /*3/440 10/440*/
+		width: 100%;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	#job p{
+		font-size: 1.500em;/*15px*/
+		width: 90%;/*360/440*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin-left: 02.5%;/*20/440*/
+		text-align: center;
+	}
+
+	#job ul li{
+		font-size: 1.500em;/*15px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	#job ul li a{
+		font-size: 1.000em;/*15px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		text-decoration: none;
+		border-bottom: 1px solid #fff
+	}
+
+	#job ul li a:hover{
+		border-bottom: 1px solid #000;
+		color: #000;
+	}
+
+	/*	=	=	=	Message	=	=	=	*/
+
+	form#message{
+				
+		width: 96%;
+		height: 400px;
+		margin: 03.409090909091% 0 03.409090909091% 02.272727272727%; /*15/440 10/440*/
+		overflow: hidden;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+	#message h3, #book h3{
+		margin: 02.272727272727% 0px 0.454545454546% 02.272727272727%; /*10/440 2/440*/
+		padding: 01.136363636364% 01.136363636364%; /*2/440 5/440*/
+		background-color: rgba(155, 116, 117, .7);
+		width: 960%;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}	
+
+
+	#message label{
+		font-size: 1.700em;/*17px*/
+		float: left;
+		clear: left;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin: 5px 0px 2px 10px;
+		width: 150px; /*150/960*/
+		text-align: right;
+	}	
+
+	#message input, #message select, #message textarea{
+		float: left;
+		width: 250px;
+		height: 15px;
+		margin: 5px 0px 2px 5px;
+	}
+
+	textarea {
+		min-width: 300px;
+		min-height: 100px;
+	}
+
+	fieldset{
+		float: left;
+		overflow: hidden;
+	}
+
+	div.side{
+			width: 250px;
+		float: left;
+		margin: 55px 0px 5px 10px;
+		overflow: hidden;
+		position: absolute;
+		right: 250px;
+	}
+
+	div.side p{
+		color: #fff;
+	}
+	/*	=	=	=	Book show =	=	=	*/
+
+	form#book{
+		clear: left;
+		background: rgba(65, 49, 39, .7);
+		width: 96%;
+		height: 700px;
+		margin: 15px 0px 2px 20px;
+		overflow: hidden;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+	#book h3{
+		margin: 5px 0px 2px 10px;
+	}
+
+	#book label{
+		width: 150px;
+		font-size: 1.700em;/*17px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin: 0px 5px 2px 5px;
+		float: left;
+		clear: left;
+		text-align: right;
+	}
+
+	#book input, #book textarea{
+		float: left;
+		width: 250px;
+		margin: 5px 0px 2px 5px;
+	}
+
+	#book select{
+		float: left;
+		margin: 5px 0px 2px 0px;
+	}
+
+		/*	=	=	=	=	=	=	footer nav	=	=	=	=	=	=	*/
+
+	div#footer{
+		background: rgba(155, 116, 117, .7);
+		width: 100%;
+		clear: left;
+		height: 150px;	
+	}
+
+	#footer ul{
+		background: rgba(65, 49, 39, .7);
+		width: 100%;
+	}
+
+	#footer ul li{
+		display: inline;
+		width: 02.5%;/*10/400*/
+		height: 40px;
+		border-left: 0px solid #59181e;	
+	}
+
+	#footer ul li:first-child{
+		border: none;
+		margin-left: 01.75%;/*7/400*/
+	}
+
+	#footer ul li a{
+		height: 40px;
+		margin: .520833333333%;/*5px 10px*/
+		padding: 0 3%;/*0px 5px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-size: .900em;/*20px*/
+		text-decoration: none;
+	}
+
+	/*	=	=	=	Rest of footer	=	=	*/
+	#footer img{
+		margin-left: 18%;/*180/1000*/
+		float: left;
+		width: 100%;
+		max-width: 100%;	
+	}
+
+	div.contain{
+		width: 10%;
+		display: none;
+	}
+
+	div#doors{
+		width: 95%; /*250/1000*/
+		margin: 2% 1.5%; /*20/1000 15/1000*/ 
+		margin-left: 55px;
+	}
+
+	div#doors p{
+		color: #59181e;
+		font-size: 1.000em;
+		float: left;
+		padding-left: 2%; /*4/400*/
+	}
+
+	div#hours{
+		width: 100%;/*250/1000*/
+		margin: 2% 0%; /*20/1000*/
+		margin-left: 02.5; /*10/400*/
+	}
+
+	div#hours p{
+		color: #59181e;
+		font-size: 1.000em;
+		float: left;
+		padding-left: 2%;/*4/400*/
+	}
+
+	div#copyright{
+		width: 100%;
+		margin: 2% 1.5%; /*20/1000 15/1000*/
+		margin-left: 06.25%; /*25/400*/
+	}
+
+	div#copyright p{
+		color: #59181e;
+		font-size: 1.000em;
+	}
+
+	div#social{
+		display: none;	
+	}
 }

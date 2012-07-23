@@ -12,7 +12,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 	}
 
 body{
-		line-height:1
+		line-height: 1;
 		margin: 0 auto;
 	}
 
@@ -314,6 +314,10 @@ div#gallery{
 h1{
 	margin-left: 400px;
 }
+
+input:hover{
+		background: rgba(155, 116, 117, .3);
+	}
 
 /*	=	=	=	Button 	=	=	=	*/
 
@@ -1092,8 +1096,8 @@ div#social img{
 		list-style: none;
 		font-size: 1.000em;/*15px*/
 		font-family: 'CopystructNormal';
-		padding-top: 10px;
-		margin-left: 3px;
+		padding-top: 5%;
+		margin-left: 0.75%; /*3/400*/
 		text-align: center;
 		
 	}
@@ -1102,7 +1106,7 @@ div#social img{
 		background: none;
 		margin-left: 5px;
 		padding: 0;
-		padding-top: 10px;
+		padding-top: 5%;
 	}
 
  	nav ul li a{
@@ -1125,7 +1129,7 @@ div#social img{
 
 	#posters figure{
 		width: 40%; /*215/960*/
-		margin: 0;
+		margin: 2%;
 		opacity: 1;
 		padding: 02.325581395349%;/*5/215*/;
 		height: 250px;
@@ -1133,7 +1137,6 @@ div#social img{
 
 	#posters figure img{
 		opacity: 1;
-		margin: 04.651162790698%; /*10/215*/
 
 	}
 
@@ -1425,9 +1428,9 @@ div#social img{
 	button {
 		float: left;
 		clear: left;
-		width: 150px;
+		width: 80%;
 		height: 30px;
-		margin: 5px 0px 5px 100px;
+		margin: 0 0 1.25% 25%;
   		background: #5e1920;
 	    background: -webkit-gradient(linear, left top, left bottom, from(#7e222a), to(#5e1920));
    		background: -webkit-linear-gradient(top, #7e222a, #5e1920);
@@ -1444,10 +1447,11 @@ div#social img{
 	   	border: none;
 	   	text-decoration: none;
 	   	color: #fff;
+	   	font-size: 1.500em;
    	}
 
 	button.big{
-		margin-left: 165px;
+		margin-left: 15%;/*100/400*/
 		margin-top: 10px
 	}
 
@@ -1506,7 +1510,7 @@ div#social img{
 
 	#newsletter input{
 		width: 130%;/*400/440*/
-		height: 30px;
+		height: 20px;
 		margin: .454545454546% 0 01.136363636364% 15px; /*2/440, 5/440, 30/440*/
 	}
 
@@ -1584,65 +1588,12 @@ div#social img{
 		color: #000;
 	}
 
-	/*	=	=	=	Message	=	=	=	*/
+	/*	=	=	=	Message	and Book show=	=	=	*/
 
-	form#message{
-				
-		width: 96%;
-		height: 400px;
-		margin: 03.409090909091% 0 03.409090909091% 02.272727272727%; /*15/440 10/440*/
-		overflow: hidden;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
-		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
-		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
-	}
-
-	#message h3, #book h3{
-		margin: 02.272727272727% 0px 0.454545454546% 02.272727272727%; /*10/440 2/440*/
-		padding: 01.136363636364% 01.136363636364%; /*2/440 5/440*/
-		background-color: rgba(155, 116, 117, .7);
-		width: 960%;
-		-webkit-border-top-left-radius: 10px;
-		-webkit-border-bottom-left-radius: 10px;
-		-moz-border-radius-topleft: 10px;
-		-moz-border-radius-bottomleft: 10px;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}	
-
-
-	#message label{
-		font-size: 1.700em;/*17px*/
-		float: left;
-		clear: left;
-		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-		color: #fff;
-		margin: 5px 0px 2px 10px;
-		width: 150px; /*150/960*/
-		text-align: right;
-	}	
-
-	#message input, #message select, #message textarea{
-		float: left;
-		width: 250px;
-		height: 15px;
-		margin: 5px 0px 2px 5px;
-	}
-
-	textarea {
-		min-width: 300px;
-		min-height: 100px;
-	}
-
-	fieldset{
-		float: left;
-		overflow: hidden;
-	}
 
 	div.side{
-			width: 250px;
+		display: none;
+		width: 250px;
 		float: left;
 		margin: 55px 0px 5px 10px;
 		overflow: hidden;
@@ -1653,14 +1604,16 @@ div#social img{
 	div.side p{
 		color: #fff;
 	}
+
+
 	/*	=	=	=	Book show =	=	=	*/
 
-	form#book{
+	form#book, form#message{
 		clear: left;
 		background: rgba(65, 49, 39, .7);
-		width: 96%;
-		height: 700px;
-		margin: 15px 0px 2px 20px;
+		width: 90%;
+		height: 570px;
+		margin: 03.75% 0 .5% 2.5%; /*15/400 2/400 20/400*/
 		overflow: hidden;
 		-webkit-border-radius: 10px;
 		-moz-border-radius: 10px;
@@ -1669,30 +1622,36 @@ div#social img{
 		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 	}
 
-	#book h3{
-		margin: 5px 0px 2px 10px;
+	form#message{
+		height: 375px;
 	}
 
-	#book label{
+	#book h3, #book h3{
+		margin: 5px 0px 2px 10px; /*5/400 2/400 10/400*/
+	}
+
+	#book label, #message label{
+		display: none;
 		width: 150px;
 		font-size: 1.700em;/*17px*/
 		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 		color: #fff;
 		margin: 0px 5px 2px 5px;
-		float: left;
-		clear: left;
-		text-align: right;
 	}
 
-	#book input, #book textarea{
+	#book input, #book textarea, #message input, #message textarea{
 		float: left;
-		width: 250px;
-		margin: 5px 0px 2px 5px;
+		width: 100%;
+		margin: 01.25% 0 .5% 5%; /*5/400 2/400*/ 
 	}
 
 	#book select{
 		float: left;
-		margin: 5px 0px 2px 0px;
+		margin: 01.25% 0 .5% 5%;
+	}
+
+	#message select{
+		margin: 01.25% 0 .5% 5%;
 	}
 
 		/*	=	=	=	=	=	=	footer nav	=	=	=	=	=	=	*/

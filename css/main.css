@@ -1,7 +1,6 @@
 /* 	=	=	=	=	Reset	=	=	=	=	=*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
 		border:0;
-		font-size:100%;
 		font:inherit;
 		vertical-align:baseline;
 		margin:0;padding:0
@@ -108,17 +107,19 @@ header img{
 
 nav{
 	position: relative;
-	bottom: 10px;
 }
 
 
  nav ul{
+ 	position: absolute;
+ 	bottom: -5px;
 	background: #59181e;
 	border-radius: 10px;
 	width: 100%;/*960px*/
 	height: 55px;
 	padding: 0;
 	overflow: hidden;
+	margin: 0;
 }
 
 
@@ -126,19 +127,22 @@ nav{
  nav ul li{
 	display: inline;
 	float: left;
-	width: 10%;/*90/1000*/
+	width: 12%;/*90/1000*/
 	list-style: none;
 	font-size: 1.500em;/*15px*/
 	font-family: 'CopystructNormal';
-	padding: 5px;
-	margin-right: 15px;
+	padding: .5%;
+	margin-right: 01.5%; /*15/1000*/
+	margin-top: 10px;
 	text-align: center;
 }
 
 nav ul li:first-child{
-	background: url(../images/Live-logogrey.png) no-repeat;
-	padding-left: 80px;
-	margin-left: 50px;
+	/*background: url(../images/Live-logogrey.png) no-repeat;*/
+	padding-left: 0; /*70/1000*/
+	margin-left: 3%; /*50/1000*/	
+	padding: 0;
+	width: 5%;
 }
 
  nav ul li a{
@@ -315,10 +319,6 @@ h1{
 	margin-left: 400px;
 }
 
-input:hover{
-		background: rgba(155, 116, 117, .3);
-	}
-
 /*	=	=	=	Button 	=	=	=	*/
 
 button {
@@ -362,10 +362,6 @@ button:hover {
    border-top-color: #b27f7f;
    background: #59181e;
    }
-
-button a:hover{
-	color: #000000;
-}
 
 button:active {
    border-top-color: #b27f7f;
@@ -614,6 +610,10 @@ form#book{
 
 /*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
 
+div#chart{
+	display: none;
+}
+
 /*	=	=	=	Sidebar	=	=	=	*/
 
 #aside{
@@ -621,7 +621,14 @@ form#book{
 	width: 28.645833333333%; /*275/960*/
 	height: 400px;
 	float: left;
+	margin-left: 1%; /*10/1000*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 }
+
 
 #aside h3{
 	margin: 03.891050583658% 0 0 07.272727272727%; 10/275 20/275
@@ -836,17 +843,23 @@ div#comments{
 
 /*	=	=	=	=	=	=	=	=	=	FAQ	=	=	=	=	=	=	=	*/
 
+ul#category li{
+	margin: 4%;
+	padding-bottom: .5%;
+	line-height: 15px;
+}
+
 ul#category li a {
-	font-size: 1.000em;/*15px*/
+	font-size: 1.200em;/*15px*/
 	font-family: Futura, "Trebuchet Ms", Arial, sans-serif;
 	color: #fff;
 	text-decoration: none;
-	border-bottom: 1px solid #fff;
+	
 }
 
 div#questions h1{
 	margin-left: 0px;
-	padding: 10px 5px;
+	padding: .5% .5%; /*10/1000 5/1000*/
 }
 
 ul#category li a:hover{
@@ -855,15 +868,15 @@ ul#category li a:hover{
 }
 
 div#questions{
-	width: 600px;
+	width: 60%; /*600/1000*/
 	float: left;
-	margin-left: 50px;
+	margin-left: 5%; /*50/1000*/
 }
 
-div#questions h2{
-	width: 600px;
-	margin: 5px 0px 5px 10px;
-	padding: 5px;
+div#questions h3{
+	width: 60%; /*600/1000*/
+	margin: 1% 0 .5% 1%; /*10/1000 5/1000*/
+	padding-top: 2%; /*10/1000*/
 }
 
 .subject{
@@ -873,20 +886,22 @@ div#questions h2{
 	-moz-border-radius-topleft: 10px;
 	border-top-left-radius: 10px;	
 	border-bottom-left-radius: 10px;
+	margin-top: 40px;
 }
 
 .subject h3{
-	padding: 5px;
+	padding: .5%; /*5/1000*/
+	padding-bottom: .7%;
 
 }
 
 div#questions dd, dt{
-	margin: 5px 0px 5px 15px;
+	margin: .833333333333% 0 .833333333333% 02.5%; /*5/600 15/600*/
 	color: #fff;
 }
 
 div#questions dd{
-	margin-left: 25px;
+	margin-left: 04.166666666667%; /*25/600*/
 }
 
 div#tickets, div#events, div#business{
@@ -1039,7 +1054,7 @@ div#social img{
 @media screen and (max-width: 400px){
 
 	body{
-		width: 400px;
+		width: 100%;
 	}
 
 	h1{
@@ -1070,20 +1085,23 @@ div#social img{
 
 	
 
-	header img{
+	#head{
 		display: none;
 	}
 
 
 	nav{
 		position: relative;
-		bottom: 10px;
+		bottom: 0px;
+		min-height: 35px;
 	}
 
 
 	 nav ul{
+	 	position: absolute;
+	 	bottom: 0;
 		width: 100%;/*400*/
-		height: 40px;
+		height: 35px;
 		padding: 0;
 		overflow: hidden;
 	}
@@ -1097,14 +1115,16 @@ div#social img{
 		font-size: 1.000em;/*15px*/
 		font-family: 'CopystructNormal';
 		padding-top: 5%;
-		margin-left: 0.75%; /*3/400*/
+		margin-left: 3%; /*3/400*/
 		text-align: center;
+		padding: 0;
 		
 	}
 
 	nav ul li:first-child{
+		display: none;
 		background: none;
-		margin-left: 5px;
+		margin-left: .50%;
 		padding: 0;
 		padding-top: 5%;
 	}
@@ -1120,18 +1140,19 @@ div#social img{
 
 	div#posters{
 		width: 100%; /*100% of 400*/
-		margin: 01.25; /*5/400*/
+		margin: 0; /*5/400*/
+		text-align: center;
 	}
 
 	div#posters h1{
-		margin-left: 22.5%; /*90/400*/
+		margin-left: 0; /*90/400*/
 	}
 
 	#posters figure{
 		width: 40%; /*215/960*/
-		margin: 2%;
+		margin: 0%;
 		opacity: 1;
-		padding: 02.325581395349%;/*5/215*/;
+		padding: 03.75%;/*5/400*/;
 		height: 250px;
 	}
 
@@ -1149,6 +1170,15 @@ div#social img{
 	}
 
 	/*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
+
+	div#chart{
+		display: inline;
+		margin-left: 5% 
+	}
+
+	div#chart img{
+		padding: .5%;
+	}
 
 	/*	=	=	=	Sidebar	=	=	=	*/
 
@@ -1308,7 +1338,7 @@ div#social img{
 
  	div#blogpage{
 		overflow: hidden;
-		width: 100%; /*100% of 400 around 680px*/
+		width: 105%; /*100% of 400 */
 		margin-left: 0;
 	}
 
@@ -1339,13 +1369,13 @@ div#social img{
 
 	.entry p, .entry li, dd{
 		margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
-		font-size: 1.400em;
+		font-size: 1.200em;
 		color: #fff;
 		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	}
 
 	.entry li{
-		margin-left: 0.5%;/*25/680*/
+		margin-left: 5%;/*25/680*/
 	}
 
 	.entry h4{
@@ -1472,8 +1502,8 @@ div#social img{
 	/*	=	=	=	Newsletter	=	=	=	*/
 	form#newsletter{
 		margin-top: 20px;	
-		width: 90%;/*440/1000*/
-		height: 310px;
+		width: 95%;/*440/1000*/
+		height: 280px;
 		padding: .454545454546%; /*5/440*/
 		float: none;
 		margin: 02.272727272727%;/*10/440*/
@@ -1532,8 +1562,8 @@ div#social img{
 	/*	=	=	=	Job	=	=	=	*/
 
 	div#job{
-		width: 90%;/*440/1000*/
-		height: 360px;
+		width: 95%;/*440/1000*/
+		height: 300px;
 		background: rgba(155, 116, 117, .7);
 		padding: .454545454546%;
 		margin: 02.272727272727%;/*10/440*/
@@ -1611,7 +1641,7 @@ div#social img{
 	form#book, form#message{
 		clear: left;
 		background: rgba(65, 49, 39, .7);
-		width: 90%;
+		width: 95%;
 		height: 570px;
 		margin: 03.75% 0 .5% 2.5%; /*15/400 2/400 20/400*/
 		overflow: hidden;
@@ -1641,18 +1671,75 @@ div#social img{
 
 	#book input, #book textarea, #message input, #message textarea{
 		float: left;
-		width: 100%;
-		margin: 01.25% 0 .5% 5%; /*5/400 2/400*/ 
+		width: 95%;
+		margin: 01.25% 0 .5% 7%; /*5/400 2/400*/ 
 	}
 
 	#book select{
 		float: left;
-		margin: 01.25% 0 .5% 5%;
+		margin: 01.25% 0 .5% 7%;
 	}
 
 	#message select{
-		margin: 01.25% 0 .5% 5%;
+		margin: 01.25% 0 .5% 7%;
 	}
+
+	/*	=	=	=	=	=	=	=	=	=	FAQ	=	=	=	=	=	=	=	*/
+
+
+	div#questions{
+		width: 97%; /*600/1000*/
+		float: none;
+		margin-left: 2%; /*50/1000*/
+	}
+
+	div#questions h1{
+		margin-left: 20%;
+	}
+
+	div#questions h3{
+		width: 97%; /*600/1000*/
+		margin: 1% 0 .5% 1%; /*10/1000 5/1000*/
+		padding-top: 2%; /*10/1000*/
+	}
+
+	.subject{
+		background: rgba(155, 116, 117, .7);
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		border-top-left-radius: 10px;	
+		border-bottom-left-radius: 10px;
+		margin-top: 20px;
+	}
+
+	.subject h3{
+		padding: .5%; /*5/1000*/
+		padding-bottom: .7%;
+
+	}	
+
+	div#questions dd, dt{
+		margin: .833333333333% 0 .833333333333% 02.5%; /*5/600 15/600*/
+		color: #fff;
+	}
+
+	div#questions dd{
+		margin-left: 5%; /*25/600*/
+	}
+
+	div#tickets, div#events, div#business{
+		background: rgba(65, 49, 39, .7);
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+	}
+
+
 
 		/*	=	=	=	=	=	=	footer nav	=	=	=	=	=	=	*/
 
@@ -1661,32 +1748,41 @@ div#social img{
 		width: 100%;
 		clear: left;
 		height: 150px;	
+		margin-top: 10px;
 	}
 
 	#footer ul{
 		background: rgba(65, 49, 39, .7);
 		width: 100%;
+		height: 20px;
 	}
 
 	#footer ul li{
 		display: inline;
 		width: 02.5%;/*10/400*/
 		height: 40px;
-		border-left: 0px solid #59181e;	
+		border-left: 0px solid #59181e;
 	}
 
 	#footer ul li:first-child{
 		border: none;
-		margin-left: 01.75%;/*7/400*/
+		margin-left: 3%;
 	}
 
 	#footer ul li a{
 		height: 40px;
 		margin: .520833333333%;/*5px 10px*/
-		padding: 0 3%;/*0px 5px*/
+		padding: 0 2%;/*0px 5px*/
 		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-		font-size: .900em;/*20px*/
+		font-size: 1.300em;/*20px*/
 		text-decoration: none;
+		color: #fff;
+	}
+
+	#footer ul li a:hover{
+		text-decoration: none;
+		border-bottom: none;
+		color: #b27f7f;
 	}
 
 	/*	=	=	=	Rest of footer	=	=	*/
@@ -1703,40 +1799,39 @@ div#social img{
 	}
 
 	div#doors{
-		width: 95%; /*250/1000*/
-		margin: 2% 1.5%; /*20/1000 15/1000*/ 
-		margin-left: 55px;
+		width: 100%; /*250/1000*/
+		margin-left: 0;
 	}
 
 	div#doors p{
 		color: #59181e;
 		font-size: 1.000em;
-		float: left;
-		padding-left: 2%; /*4/400*/
+		text-align: center;
 	}
 
 	div#hours{
 		width: 100%;/*250/1000*/
 		margin: 2% 0%; /*20/1000*/
-		margin-left: 02.5; /*10/400*/
+		
 	}
 
 	div#hours p{
 		color: #59181e;
 		font-size: 1.000em;
-		float: left;
-		padding-left: 2%;/*4/400*/
+		float: none;
+		text-align: center;
 	}
 
 	div#copyright{
 		width: 100%;
 		margin: 2% 1.5%; /*20/1000 15/1000*/
-		margin-left: 06.25%; /*25/400*/
+		
 	}
 
 	div#copyright p{
 		color: #59181e;
 		font-size: 1.000em;
+		text-align: center;
 	}
 
 	div#social{

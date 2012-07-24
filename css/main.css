@@ -216,7 +216,8 @@ div#posters h1{
 /*	=	=	Secondary content =	=	*/
 
 div#secondary{
-	margin-right: 5%;	
+	margin-right: 5%;
+	margin-left: 2%	
 }
 
 div#directions{
@@ -255,7 +256,7 @@ div#directions{
 
 #directions ul li a{
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 1.000em;
+	font-size: 1.300em;
 	color: #fff; 
 	text-decoration: none;
 	border-bottom: 1px solid #fff;
@@ -311,6 +312,287 @@ div#gallery{
 
 #gallery img{
 	margin: 0.714285714286% 03.571428571429%; /*2/280 10/280*/
+}
+
+/*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
+
+div#chart{
+	display: none;
+}
+
+/*	=	=	=	Sidebar	=	=	=	*/
+
+#aside{
+	background: rgba(155, 116, 117, .7);
+	width: 28.645833333333%; /*275/960*/
+	height: 400px;
+	float: left;
+	margin-left: 1%; /*10/1000*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+}
+
+
+#aside h3{
+	/*margin: 03.891050583658% 0 0 07.272727272727%; 10/275 20/275*/
+	text-align: center;
+	margin: 03.891050583658% 0 0 0;
+}
+
+#aside p{
+	color: #fff;
+	padding: 5px;
+	text-align: center;
+}
+
+#aside ul{
+	width: 90%;
+	margin: 0 3% 0 3%;
+}
+
+#aside ul li{
+	list-style-type: none;
+	margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
+	font-size: 1.400em;
+	color: #fff;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
+}
+
+#aside ul li img{
+	width: 100%;
+	max-width: 100%;
+}
+
+/*	=	=	=	main =	=	=	*/
+
+div.main{
+	margin-left: 35%;/*350/1000*/
+}
+
+.main h1{
+	margin-left: 0px;
+	padding: 1% 00.5%; /*10/1000 5/1000*/
+}
+
+/*	=	=	= Months	=	=	=	*/
+
+.month{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%; /*100% of 960*/
+	overflow: hidden;
+}
+
+.monthof{
+	background: #59181e;
+	width: 100%;
+	padding: .520833333333% 0 .520833333333% 01.041666666667%; /*5/960 10/960*/
+	font-size: 2.000em;/*20px*/
+	font-family: 'CopystructNormal';
+	color: #fff;
+	overflow: hidden;
+}
+
+.monthof h2{
+	color: #fff;
+}
+
+.bandodd{
+	background: rgba(65, 49, 39, .7);
+	width: 33.333333333333%;/*320/960*/
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.bandodd p{
+	color: #fff;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
+
+}
+
+.priceodd{
+	background: rgba(65, 49, 39, .7);
+	width: 33.333333333333%;/*320/960*/
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;	
+}
+
+.priceodd p{
+	color: #fff;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
+}
+
+.timeodd{
+	background: rgba(65, 49, 39, .7);
+	width: 33.333333333333%;/*320/960*/
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.timeodd p{
+	color: #fff;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
+}
+
+.bandeven{
+	background: rgba(65, 49, 39, .9);
+	width: 33.333333333333%;/*320/960*/
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.bandeven p{
+	color: #fff;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
+}
+
+.priceeven{
+	background: rgba(65, 49, 39, .9);
+	width: 33.333333333333%;/*320/960*/
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.priceeven p{
+	color: #fff;
+	padding: 6px 0px 0px 10px;
+}
+
+.timeeven{
+	background: rgba(65, 49, 39, .9);
+	width: 33.333333333333%;/*320/960*/
+	height: 51px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.timeeven p{
+	color: #fff;
+	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
+}
+
+
+/*	=	=	=	=	=	=	=	=	Blog	=	=	=	=	=	=	=	*/
+
+ div#blogpage{
+	overflow: hidden;
+	width: 70%; /*70% of 960 around 680px*/
+
+}
+
+ div#blogpage h1{
+	margin: 0.5% 0 0.5% 3%; /*5/1000 30/1000*/
+	font-size: 2.700em;
+	padding: 0 0 0 4%; /*4/1000*/
+}
+
+
+ #blogpage h2{
+	font-size: 1.500em;
+	margin: 0.5% 0 0 0.5%; /*5/1000*/
+	padding: 1.5% 1%; /*10/1000 5/1000*/
+	background-color: rgba(155, 116, 117, .7);
+	width: 100%; 
+}
+
+.who{
+	margin: 0.294117647059% 0 0.441176470588% 0.735294117647%; /*2/680 3/680 5/680*/
+	font-size: 1.200em;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
+}
+
+.entry dt{
+	color: #59181e;
+}
+
+.entry p, .entry li, dd{
+	margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
+	font-size: 1.400em;
+	color: #fff;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.entry li{
+	margin-left: 03.676470588235%;/*25/680*/
+}
+
+.entry h4{
+	color: #59181e;
+}
+
+article{
+	margin: 0.735294117647% 0 04.411764705882% 07.352941176471%; /*5/680 30/680 50/680*/
+	background-color: rgba(65, 49, 39, .7);
+	width: 85%;
+	padding: 01.470588235294%; /*10/680*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+}
+
+div#comments{
+	margin: 01.470588235294% 0 0.735294117647% 22.058823529412%; /*10/680 5/680 150/680*/
+}
+
+#comments a{
+	padding: 0.735294117647%; /*5/680*/
+	font-size: 1.300em;
+	font-family: Futura "Trebuchet Ms", Arial, sans-serif;
+}
+
+/*	=	=	=	=	=	=	Gallery	=	=	=	=	=	=	=	*/
+
+#gallerypage{
+	width: 100%; /*100% of 960*/
+}
+
+#gallerypage h1{
+	margin-left: 39.0625%;/*375/960*/
+}
+
+figure{
+	float: left;
+	height: 300px;
+	margin: 01.041666666667% 01.041666666667% 01.041666666667% 02.083333333333%;/*10/960 20/960*/
+	position: relative;
+	opacity: .7;
+	width: 20.833333333333%;/*215/960*/
+}
+
+figure:hover{
+	opacity: 1;
+	border-bottom: none;
+}
+
+figcaption{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(155, 116, 117, .9);
+	color: #fff;
+	height: 15px;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 1.200em;
+	margin: 0 0px 01.041666666667% 0.729166666667%;/*2/960 7/960*/
+	padding: 00.3125%;/*3/960*/
+}
+
+ figure img{
+	max-width: 100%;
+	width: 100%;
 }
 
 /*	=	= 	=	=	=	=	=	=	Forms	=	=	=	=	=	=	=	*/
@@ -436,6 +718,7 @@ form#newsletter{
 
 div#job{
 	width: 44%;/*440/1000*/
+	height: 370px;
 	background: rgba(155, 116, 117, .7);
 	padding: .454545454546%;
 	float: left;
@@ -467,13 +750,14 @@ div#job{
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #fff;
 	margin-left: 04.545454545455%;/*20/440*/
+	line-height: 20px;
 }
 
 #job ul li{
 	font-size: 1.500em;/*15px*/
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #fff;
-	margin-left: 11.363636363636%;/*50/440*/
+	margin-left: 10%;/*50/440*/
 }
 
 #job ul li a{
@@ -605,241 +889,10 @@ form#book{
 	margin: 5px 0px 2px 0px;
 }
 
-
-
-
-/*	=	=	=	=	=	=	=	=	Calander	=	=	=	=	=	=	*/
-
-div#chart{
+div#ifmobile{
 	display: none;
 }
 
-/*	=	=	=	Sidebar	=	=	=	*/
-
-#aside{
-	background: rgba(155, 116, 117, .7);
-	width: 28.645833333333%; /*275/960*/
-	height: 400px;
-	float: left;
-	margin-left: 1%; /*10/1000*/
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
-	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
-	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
-}
-
-
-#aside h3{
-	margin: 03.891050583658% 0 0 07.272727272727%; 10/275 20/275
-}
-
-#aside p{
-	color: #fff;
-	margin-left: 07.272727272727%; /*20/275*/
-}
-
-#aside ul{
-	width: 90%;
-}
-
-#aside ul li{
-	list-style-type: none;
-	margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
-	font-size: 1.400em;
-	color: #fff;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-
-}
-
-#aside ul li img{
-	width: 100%;
-	max-width: 100%;
-}
-
-/*	=	=	=	main =	=	=	*/
-
-div.main{
-	margin-left: 35%;/*350/1000*/
-}
-
-.main h1{
-	margin-left: 0px;
-	padding: 1% 00.5%; /*10/1000 5/1000*/
-}
-
-/*	=	=	= Months	=	=	=	*/
-
-.month{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 100%; /*100% of 960*/
-	overflow: hidden;
-}
-
-.monthof{
-	background: #59181e;
-	width: 100%;
-	padding: .520833333333% 0 .520833333333% 01.041666666667%; /*5/960 10/960*/
-	font-size: 2.000em;/*20px*/
-	font-family: 'CopystructNormal';
-	color: #fff;
-	overflow: hidden;
-}
-
-.monthof h2{
-	color: #fff;
-}
-
-.bandodd{
-	background: rgba(65, 49, 39, .7);
-	width: 33.333333333333%;/*320/960*/
-	height: 51px;
-	padding-bottom: 5px;
-	float: left;
-}
-
-.bandodd p{
-	color: #fff;
-	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
-
-}
-
-.priceodd{
-	background: rgba(65, 49, 39, .7);
-	width: 33.333333333333%;/*320/960*/
-	height: 51px;
-	padding-bottom: 5px;
-	float: left;	
-}
-
-.priceodd p{
-	color: #fff;
-	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
-}
-
-.timeodd{
-	background: rgba(65, 49, 39, .7);
-	width: 33.333333333333%;/*320/960*/
-	height: 51px;
-	padding-bottom: 5px;
-	float: left;
-}
-
-.timeodd p{
-	color: #fff;
-	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
-}
-
-.bandeven{
-	background: rgba(65, 49, 39, .9);
-	width: 33.333333333333%;/*320/960*/
-	height: 51px;
-	padding-bottom: 5px;
-	float: left;
-}
-
-.bandeven p{
-	color: #fff;
-	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
-}
-
-.priceeven{
-	background: rgba(65, 49, 39, .9);
-	width: 33.333333333333%;/*320/960*/
-	height: 51px;
-	padding-bottom: 5px;
-	float: left;
-}
-
-.priceeven p{
-	color: #fff;
-	padding: 6px 0px 0px 10px;
-}
-
-.timeeven{
-	background: rgba(65, 49, 39, .9);
-	width: 33.333333333333%;/*320/960*/
-	height: 51px;
-	padding-bottom: 5px;
-	float: left;
-}
-
-.timeeven p{
-	color: #fff;
-	padding: 01.5625% 0 0 03.125%; /*6/320 10/320*/
-}
-
-/*	=	=	=	=	=	=	=	=	Blog	=	=	=	=	=	=	=	*/
-
- div#blogpage{
-	overflow: hidden;
-	width: 70%; /*70% of 960 around 680px*/
-
-}
-
- div#blogpage h1{
-	margin: 0.5% 0 0.5% 3%; /*5/1000 30/1000*/
-	font-size: 2.700em;
-	padding: 0 0 0 4%; /*4/1000*/
-}
-
-
- #blogpage h2{
-	font-size: 1.500em;
-	margin: 0.5% 0 0 0.5%; /*5/1000*/
-	padding: 1.5% 1%; /*10/1000 5/1000*/
-	background-color: rgba(155, 116, 117, .7);
-	width: 100%; 
-}
-
-.who{
-	margin: 0.294117647059% 0 0.441176470588% 0.735294117647%; /*2/680 3/680 5/680*/
-	font-size: 1.200em;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-
-}
-
-.entry dt{
-	color: #59181e;
-}
-
-.entry p, .entry li, dd{
-	margin: 0.735294117647% 0 0.441176470588% 02.941176470588%; /*5/680 3/680 20/680*/
-	font-size: 1.400em;
-	color: #fff;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-}
-
-.entry li{
-	margin-left: 03.676470588235%;/*25/680*/
-}
-
-.entry h4{
-	color: #59181e;
-}
-
-article{
-	margin: 0.735294117647% 0 04.411764705882% 07.352941176471%; /*5/680 30/680 50/680*/
-	background-color: rgba(65, 49, 39, .7);
-	width: 85%;
-	padding: 01.470588235294%; /*10/680*/
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
-	-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
-	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
-}
-
-div#comments{
-	margin: 01.470588235294% 0 0.735294117647% 22.058823529412%; /*10/680 5/680 150/680*/
-}
-
-#comments a{
-	padding: 0.735294117647%; /*5/680*/
-	font-size: 1.300em;
-	font-family: Futura "Trebuchet Ms", Arial, sans-serif;
-}
 
 /*	=	=	=	=	=	=	=	=	=	FAQ	=	=	=	=	=	=	=	*/
 
@@ -916,48 +969,6 @@ div#tickets, div#events, div#business{
 
 }
 
-/*	=	=	=	=	=	=	Gallery	=	=	=	=	=	=	=	*/
-
-#gallerypage{
-	width: 100%; /*100% of 960*/
-}
-
-#gallerypage h1{
-	margin-left: 39.0625%;/*375/960*/
-}
-
-figure{
-	float: left;
-	height: 300px;
-	margin: 01.041666666667% 01.041666666667% 01.041666666667% 02.083333333333%;/*10/960 20/960*/
-	position: relative;
-	opacity: .7;
-	width: 20.833333333333%;/*215/960*/
-}
-
-figure:hover{
-	opacity: 1;
-	border-bottom: none;
-}
-
-figcaption{
-	display: block;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background: rgba(155, 116, 117, .9);
-	color: #fff;
-	height: 15px;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	font-size: 1.200em;
-	margin: 0 0px 01.041666666667% 0.729166666667%;/*2/960 7/960*/
-	padding: 00.3125%;/*3/960*/
-}
-
- figure img{
-	max-width: 100%;
-	width: 100%;
-}
 
 
 /*	=	=	=	=	=	=	=		footer	=	=	=	=	=	=	=	*/
@@ -979,12 +990,11 @@ div#footer{
 	display: inline;
 	width: 07.291666666667%;/*70px*/
 	height: 40px;
-	border-left: 3px solid #59181e;
 }
 
 #footer ul li:first-child{
 	border: none;
-	margin-left: 15%;/*150/1000*/
+	margin-left: 25%;/*150/1000*/
 }
 
 #footer ul li a{
@@ -1481,7 +1491,7 @@ div#social img{
    	}
 
 	button.big{
-		margin-left: 15%;/*100/400*/
+		margin-left: 10%;/*100/400*/
 		margin-top: 10px
 	}
 
@@ -1642,7 +1652,7 @@ div#social img{
 		clear: left;
 		background: rgba(65, 49, 39, .7);
 		width: 95%;
-		height: 570px;
+		height: 600px;
 		margin: 03.75% 0 .5% 2.5%; /*15/400 2/400 20/400*/
 		overflow: hidden;
 		-webkit-border-radius: 10px;
@@ -1671,7 +1681,7 @@ div#social img{
 
 	#book input, #book textarea, #message input, #message textarea{
 		float: left;
-		width: 95%;
+		width: 85%;
 		margin: 01.25% 0 .5% 7%; /*5/400 2/400*/ 
 	}
 
@@ -1682,6 +1692,20 @@ div#social img{
 
 	#message select{
 		margin: 01.25% 0 .5% 7%;
+	}
+
+	div#demo{
+		display: none;
+	}
+
+	div#ifmobile{
+		display: block;
+		margin-left: 7%;
+		width: 75%;
+	}
+
+	div#ifmobile p{
+		color: #fff;
 	}
 
 	/*	=	=	=	=	=	=	=	=	=	FAQ	=	=	=	=	=	=	=	*/

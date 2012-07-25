@@ -114,6 +114,8 @@ nav{
  	position: absolute;
  	bottom: -5px;
 	background: #59181e;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	border-radius: 10px;
 	width: 100%;/*960px*/
 	height: 55px;
@@ -195,6 +197,7 @@ div#posters{
 
 div#posters h1{
 	margin-left: 0%; /*360/960*/
+	text-align: center;
 }
 
 #posters figure{
@@ -546,11 +549,11 @@ article{
 	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 }
 
-div#comments{
+div.comments{
 	margin: 01.470588235294% 0 0.735294117647% 22.058823529412%; /*10/680 5/680 150/680*/
 }
 
-#comments a{
+.comments a{
 	padding: 0.735294117647%; /*5/680*/
 	font-size: 1.300em;
 	font-family: Futura "Trebuchet Ms", Arial, sans-serif;
@@ -777,9 +780,7 @@ div#job{
 	color: #000;
 }
 
-/*	=	=	=	Message	=	=	=	*/
-
-
+/*	=	=	=	Message and Boook	=	=	=	*/
 
 #message h3, #book h3{
 	margin: 01.041666666667% 0 0.208333333333% 0.520833333333%; /*10/960 2/960 5/960*/
@@ -797,39 +798,6 @@ div#job{
 }
 
 
-
-
-#message input, #message select{
-	float: left;
-	width: 250px;
-	height: 15px;
-	margin: 5px 0px 2px 5px;
-}
-
-textarea {
-	min-width: 300px;
-	min-height: 100px;
-}
-
-fieldset{
-	float: left;
-	overflow: hidden;
-}
-
-div.side{
-	width: 250px;
-	float: left;
-	margin: 55px 0px 5px 10px;
-	overflow: hidden;
-	position: absolute;
-	right: 250px;
-}
-
-div.side p{
-	color: #fff;
-}
-/*	=	=	=	Book show =	=	=	*/
-
 form#book, form#message{
 	clear: left;
 	background: rgba(65, 49, 39, .7);
@@ -844,28 +812,60 @@ form#book, form#message{
 	box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 }
 
-#book h3{
-	margin: 5px 0px 2px 10px;
+form#message{
+	height: 575px;
 }
+
 
 #book label, #message label{
 	width: 30%; /*150/960*/
 	font-size: 1.700em;/*17px*/
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	color: #fff;
-	margin: 0px 5px 2px 5px; 
+	margin: 0 0.520833333333% 0.208333333333% 0.520833333333%; /*5/960 2/960*/
 	float: left;
 	clear: left;
 	text-align: right;
+	padding-top: 2%;
 }
 
-#book fieldset, #message fieldset{
-	margin-left: 10%;
+
+
+textarea {
+	min-width: 31.25%; /*300/960*/
+	min-height: 100px;
 }
 
-#book input, #book textarea, #message textarea{
+fieldset{
 	float: left;
-	width: 250px;
+	overflow: hidden;
+	margin-left: 2%;
+	width: 50%;
+	margin-top: 20px
+}
+
+div.side{
+	width: 26.041666666667%; /*250/960*/
+	float: left;
+	margin: 05.729166666667% 0 00.520833333333% 3%; /*55/960 5/960 20/960*/
+	overflow: hidden;
+	text-align: center;
+	
+}
+
+div.side p{
+	color: #fff;
+	font-size: 1.500em;
+}
+
+div.side img{
+	padding: 2%;
+}
+
+#book input, #book textarea, #message textarea, #message input, #message select{
+	float: left;
+	width: 60%;/*300/960*/
+	height: 20px;
 	margin: 5px 0px 2px 5px;
 }
 
@@ -1338,38 +1338,257 @@ div#social img{
 
 
 	/*	=	= 	=	=	=	=	=	=	Forms	=	=	=	=	=	=	=	*/
+	h1{
+	margin-left: 0;
+	text-align: center;
+}
 
+/*	=	=	=	Button 	=	=	=	*/
+
+	button {
+		float: left;
+		clear: left;
+		width: 150px;
+		height: 30px;
+		margin: 5px 0px 5px 50px;
+		background: #5e1920;
+		background: -webkit-gradient(linear, left top, left bottom, from(#7e222a), to(#5e1920));
+		background: -webkit-linear-gradient(top, #7e222a, #5e1920);
+		background: -moz-linear-gradient(top, #7e222a, #5e1920);
+		background: -ms-linear-gradient(top, #7e222a, #5e1920);
+		background: -o-linear-gradient(top, #7e222a, #5e1920);
+		padding: 7px 13px;
+		-webkit-border-radius: 11px;
+		-moz-border-radius: 11px;
+		border-radius: 11px;
+		text-shadow: rgba(0,0,0,.4) 0 1px 0;
+		color: white;
+		vertical-align: center;
+		border: none;
+		text-decoration: none;
+		color: #fff;
+   }
+
+	button.big{
+		margin-left: 165px;
+		margin-top: 10px
+	}
+
+	button:hover {
+		border-top-color: #b27f7f;
+		background: #59181e;
+   }
+
+	button:active {
+		border-top-color: #b27f7f;
+		background: #b27f7f;
+   }
+
+	/*	=	=	=	Newsletter	=	=	=	*/
+	form#newsletter{
+		margin-top: 20px;
+		width: 44%;/*440/1000*/
+		height: 370px;
+		padding: .454545454546%; /*5/440*/
+		background: rgba(155, 116, 117, .7);
+		float: left;
+		margin: 02.272727272727%;/*10/440*/
+		overflow: hidden;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+	#newsletter h3, #job h3{
+		margin: 01.136363636364% 0 0.454545454546% 0; /*5/440 2/440*/
+		background: rgba(65, 49, 39, .7);
+		padding: 01.590909090909% 01.590909090909% 01.590909090909% 02.272727272727%; /*7/440 10/440*/
+		width: 100%;
+		font-size: 1.700em;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	#newsletter ul li{
+		margin: 0.681818181818% 0 0 10%; /*3/440 20/440*/
+		font-size: 1.500em;/*15px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+	}
+
+	#newsletter label{
+		display: block;
+		font-size: 1.500em;/*17px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin: 0px 0px 2px 5px;
+		padding: 1%;
+	}
+
+	#newsletter input{
+		width: 100%;/*400/440*/
+		height: 20px;
+		margin: .454545454546% 0 01.136363636364% 05.681818181818%; /*2/440, 5/440, 30/440*/
+	}
+
+	#check input{
+		width: 20px;
+		float: left;	
+	}
+
+	#check p{
+		float: left;
+		color: #fff;
+		margin-left: 5px;
+		font-size: 1.200em;
+		padding-top: 2%;
+	}
+
+	/*	=	=	=	Job	=	=	=	*/	
+
+	div#job{
+		width: 45%;/*440/1000*/
+		height: 370px;
+		background: rgba(155, 116, 117, .7);
+		padding: .454545454546%;
+		float: left;
+		margin: 02.272727272727%;/*10/440*/
+		overflow: hidden;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+
+	#job ul li{
+		font-size: 1.500em;/*15px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin-left: 12%;/*50/440*/
+		padding-top: 5px;
+	}		
+
+
+	/*	=	=	=	Message and Boook	=	=	=	*/	
+
+	#message h3, #book h3{
+		margin: 01.041666666667% 0 0.208333333333% 0.520833333333%; /*10/960 2/960 5/960*/
+		padding: 5px;
+		background-color: rgba(155, 116, 117, .7);
+		width: 960%;
+		-webkit-border-top-left-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+
+	form#book, form#message{
+		clear: left;
+		background: rgba(65, 49, 39, .7);
+		width: 96%;
+		height: 700px;
+		margin: 15px 0px 2px 15px;
+		overflow: hidden;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;-webkit-box-shadow: -2px 6px 9px rgba(82, 78, 64, 0.75);
+		-moz-box-shadow:    -2px 6px 9px rgba(82, 78, 64, 0.75);
+		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
+	}
+
+	form#message{
+		height: 500px;
+	}
+
+
+	#book label, #message label{
+		width: 30%; /*150/960*/
+		font-size: 1.700em;/*17px*/
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		color: #fff;
+		margin: 0 0.520833333333% 0.208333333333% 0.520833333333%; /*5/960 2/960*/
+		float: left;
+		clear: left;
+		text-align: right;
+		padding-top: 2%;
+	}
+
+
+
+	textarea {
+		min-width: 31.25%; /*300/960*/
+		min-height: 100px;
+	}
+
+	fieldset{
+		float: left;
+		overflow: hidden;
+		margin-left: 2%;
+		width: 60%;
+		margin-top: 20px
+	}
+
+	div.side{
+		width: 26.041666666667%; /*250/960*/
+		float: left;
+		margin: 05.729166666667% 0 00.520833333333% 3%; /*55/960 5/960 20/960*/
+		overflow: hidden;
+		text-align: center;	
+	}
+
+	div.side p{
+		color: #fff;
+		font-size: 1.500em;
+	}
+
+	div.side img{
+		width: 100%;
+		padding: 2%;
+		height: 120px;
+	}
+
+	#book input, #book textarea, #message textarea, #message input, #message select{
+		float: left;
+		width: 60%;/*300/960*/
+		height: 20px;
+		margin: 5px 0px 2px 5px;
+	}
+
+	#book select{
+		float: left;
+		margin: 5px 0px 2px 0px;
+	}
+
+	div#ifmobile{
+		display: none;
+	}
 
 
 	/*	=	=	=	=	=	=	=	=	=	FAQ	=	=	=	=	=	=	=	*/
 
-	ul#category li{
-		margin: 4%;
-		padding-bottom: .5%;
-		line-height: 15px;
-	}
 
-	ul#category li a {
-		font-size: 1.200em;/*15px*/
-		font-family: Futura, "Trebuchet Ms", Arial, sans-serif;
-		color: #fff;
-		text-decoration: none;
+	div#questions{
+		width: 100%; /*600/1000*/
+		float: none;
+		margin-left: 0%; /*50/1000*/
 	}
 
 	div#questions h1{
 		margin-left: 0px;
-		padding: .5% .5%; /*10/1000 5/1000*/
-	}
+		text-align: center;
 
-	ul#category li a:hover{
-		color: #000;
-		border-bottom: 2px solid #000;
-	}
-
-	div#questions{
-		width: 60%; /*600/1000*/
-		float: left;
-		margin-left: 5%; /*50/1000*/
 	}
 
 	div#questions h3{
@@ -1438,7 +1657,7 @@ div#social img{
 
 	#footer ul li:first-child{
 		border: none;
-		margin-left: 25%;/*150/1000*/
+		margin-left: 20%;/*150/1000*/
 	}
 
 	#footer ul li a{
@@ -1453,7 +1672,7 @@ div#social img{
 	/*	=	=	Rest of footer	=	=	*/
 	#footer img{
 		margin-top: 20px;
-		margin-left: 18%;/*180/1000*/
+		margin-left: 15%;/*180/1000*/
 		float: left;
 	}
 
@@ -1479,17 +1698,18 @@ div#social img{
 
 	div#copyright{
 		clear: left;
-		width: 52.083333333333%;/*500px*/
-		margin-left: 30%;/*300/1000*/
+		width: 100%;/*500px*/
+		margin-left: 25%;/*300/1000*/
 	}
 
 	div#copyright p{
 		color: #59181e;
+		font-size: 1.200em;
 	}
 
 	div#social{
 		clear: left;
-		margin-left: 45%; /*450/1000*/
+		margin-left: 40%; /*450/1000*/
 	}
 
 	div#social img{
@@ -1675,13 +1895,15 @@ div#social img{
 
 	/*	=	=	=	main =	=	=	*/
 
-	div.main{
-		margin-left: 01.25%;/*5/400*/
+	div#chart{
+		display: inline;
+		margin-left: 7%;
+		width: 35%;
 	}
 
-	.main h1{
-		margin-left: 20%;/*80/400*/
-		padding: 1% 00.5%; /*10/1000 5/1000*/
+	div#chart img{
+		width: 40%;
+		height: 100px;
 	}
 
 	/*	=	=	= Months	=	=	=	*/
@@ -1689,8 +1911,9 @@ div#social img{
 	.month{
 		margin-top: 10px;
 		margin-bottom: 10px;
-		width: 100%; /*100% of 400*/
+		width: 98%; /*100% of 400*/
 		overflow: hidden;
+		margin-left: 1%;
 	}
 
 	.monthof{
@@ -1797,14 +2020,15 @@ div#social img{
 
  	div#blogpage{
 		overflow: hidden;
-		width: 105%; /*100% of 400 */
-		margin-left: 0;
+		width: 100%; /*100% of 400 */
+		margin-left: 3%;
 	}
 
 	 div#blogpage h1{
-		margin: 0.5% 0 0.5% 17.5%; /*5/1000 30/1000*/
+		margin: 0.5% 0 0.5% 0%; /*5/1000 30/1000*/
 		font-size: 2.000em;
 		padding: 0 0 0 4%; /*4/1000*/
+		text-align: center;
 	}
 
 
@@ -1853,11 +2077,11 @@ div#social img{
 		box-shadow:         -2px 6px 9px rgba(82, 78, 64, 0.75);
 	}
 
-	div#comments{
+	div.comments{
 		margin: 01.470588235294% 0 0.735294117647% 07.5%; /*10/680 5/680 30/400*/
 	}
 
-	#comments a{
+	.comments a{
 		padding: 0.735294117647%; /*5/680*/
 		font-size: 1.300em;
 		font-family: Futura "Trebuchet Ms", Arial, sans-serif;
@@ -1870,7 +2094,8 @@ div#social img{
 	}
 
 	#gallerypage h1{
-		margin-left: 30%;/*120/400*/
+		margin-left: 0%;/*120/400*/
+		text-align: center;
 	}
 
 	figure{
@@ -1909,7 +2134,8 @@ div#social img{
 	/*	=	= 	=	=	=	=	=	=	Forms	=	=	=	=	=	=	=	*/
 
 	h1{
-		margin-left: 32.5%;/*130/400*/
+		margin-left: 0%;/*130/400*/
+		text-align: center;
 	}
 
 	/*	=	=	=	Button 	=	=	=	*/
@@ -1940,7 +2166,7 @@ div#social img{
    	}
 
 	button.big{
-		margin-left: 10%;/*100/400*/
+		margin-left: 7%;/*100/400*/
 		margin-top: 10px
 	}
 
@@ -1961,8 +2187,8 @@ div#social img{
 	/*	=	=	=	Newsletter	=	=	=	*/
 	form#newsletter{
 		margin-top: 20px;	
-		width: 95%;/*440/1000*/
-		height: 280px;
+		width: 90%;/*440/1000*/
+		height: 300px;
 		padding: .454545454546%; /*5/440*/
 		float: none;
 		margin: 02.272727272727%;/*10/440*/
@@ -2012,8 +2238,9 @@ div#social img{
 		float: left;
 		color: #fff;
 		margin-left: 5px;
-		padding: 5px;
-		font-size: 1.500em
+		padding: 2px;
+		font-size: 1.200em;
+		padding-top: 2%;
 	}
 
 	
@@ -2021,7 +2248,7 @@ div#social img{
 	/*	=	=	=	Job	=	=	=	*/
 
 	div#job{
-		width: 95%;/*440/1000*/
+		width: 90%;/*440/1000*/
 		height: 300px;
 		background: rgba(155, 116, 117, .7);
 		padding: .454545454546%;
@@ -2100,8 +2327,8 @@ div#social img{
 	form#book, form#message{
 		clear: left;
 		background: rgba(65, 49, 39, .7);
-		width: 95%;
-		height: 600px;
+		width: 90%;
+		height: 780px;
 		margin: 03.75% 0 .5% 2.5%; /*15/400 2/400 20/400*/
 		overflow: hidden;
 		-webkit-border-radius: 10px;
@@ -2128,10 +2355,14 @@ div#social img{
 		margin: 0px 5px 2px 5px;
 	}
 
+	#book fieldset, #message fieldset{
+		width: 100%;
+	}
+
 	#book input, #book textarea, #message input, #message textarea{
 		float: left;
 		width: 85%;
-		margin: 01.25% 0 .5% 7%; /*5/400 2/400*/ 
+		margin: 01.25% 0 .5% 4%; /*5/400 2/400*/ 
 	}
 
 	#book select{
@@ -2167,7 +2398,8 @@ div#social img{
 	}
 
 	div#questions h1{
-		margin-left: 20%;
+		margin-left: 0;
+		text-align: center;
 	}
 
 	div#questions h3{

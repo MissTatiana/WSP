@@ -49,39 +49,9 @@ header{
 	font-size: 1.50em
 }
 
-/*	=	=	Button	=	=	*/
-.button {
-	margin-top: 50px;
-	margin-left: 65%;
-	-moz-box-shadow: 0px 1px 2px 1px #285559;
-	-webkit-box-shadow: 0px 1px 2px 1px #285559;
-	box-shadow: 0px 1px 2px 1px #285559;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d4e6e8), color-stop(1, #94a6a8) );
-	background:-moz-linear-gradient( center top, #d4e6e8 5%, #94a6a8 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d4e6e8', endColorstr='#94a6a8');
-	background-color:#d4e6e8;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #59acb5;
-	display:inline-block;
-	color:#050505;
-	font-family:arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:9px 23px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #d4e6e8;
-}
-.button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #94a6a8), color-stop(1, #d4e6e8) );
-	background:-moz-linear-gradient( center top, #94a6a8 5%, #d4e6e8 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#94a6a8', endColorstr='#d4e6e8');
-	background-color:#94a6a8;
-}
-.button:active {
-	position:relative;
-	top:1px;
+#badge_div{
+	margin-left: 130px;
+	margin-top: -20px;
 }
 
 /* 	=	=	=	=	=	Bottom Section 	=	=	=	=	*/

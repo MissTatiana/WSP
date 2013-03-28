@@ -142,6 +142,37 @@ iframe{
 	margin-top: 525px;
 }
 
+/*	=	=	=	=	=	Last Section	=	=	=	=	*/
+#people{
+	background: url(../images/lastbox.png);
+	background-repeat: no-repeat;
+	margin: 20px 0 50px 20px;
+	width: 940;
+	height: 360;
+}
+
+#people h3{
+	font-size: 3.00em;
+	margin: 20px 0 0 0px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+#people dl{
+	margin: 20px 0 0 335px;
+}
+
+#people dt{
+	font-size: 2.00em;
+	margin: 0 0 0 80px;
+	text-decoration: 
+}
+
+#people dd{
+	font-size: 2.00em;
+}
+
+
 /*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=
 							Media Queries	
 =	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/

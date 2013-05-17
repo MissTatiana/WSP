@@ -64,7 +64,7 @@ header{
 	background: url(../images/top.png);
 	background-repeat: no-repeat;
 	width: 960px;
-	height: 218px;
+	height: 150px;
 	margin-top: 320px;
 }
 
@@ -93,53 +93,23 @@ header{
 	height: 215px;
 }
 
-/*	=	=	=	Image Gallery	=	=	=	*/
+/*	=	=	=	Image and video	=	=	=	*/
 
- .gallery{
- 	position: relative;
- 	margin-top: 0px;
- 	margin-left: 80px;
- }
+#imageViewer{
+	margin-left: 130px;
+}
 
- .thumbnail img{
- 	border: 1px solid white;
- 	margin: 0 5px 5px 0;
- }
+#buttons{
+	margin-left: 30px;
+}
 
- .thumbnail:hover{
- 	background-color: transparent;
- }
-
- .thumbnail:hover img{
- 	border: 1px solid blue;
- }
-
-.thumbnail span{
- 	position: absolute;
- 	background-color: lightyellow;
- 	padding: 5px;
- 	left: -1000px;
- 	border: 1px dashed gray;
- 	visibility: visible;
- 	color: black;
- 	text-decoration: none;
- }
-
- .thumbnail span img{
- 	border-width: 0;
- 	padding: 2px;
- }
-
- .thumbnail:hover span{
- 	visibility: visible;
- 	top: 150px;
- 	left: 50px;
- 	z-index: 50;
- }
+#arrowLeft{
+	margin-right: 475px;
+}
 
 iframe{
-	margin-left: 200px;
-	margin-top: 525px;
+	margin-left: 175px;
+	margin-top: 40px;
 }
 
 /*	=	=	=	=	=	Last Section	=	=	=	=	*/
@@ -148,7 +118,7 @@ iframe{
 	background-repeat: no-repeat;
 	margin: 20px 0 50px 20px;
 	width: 940;
-	height: 360;
+	height: 270;
 }
 
 #people h3{
